@@ -13,3 +13,7 @@ __pycache__/
 *.bak
 *.pre-*
 .env
+
+# Internal audit analysis (findings derived partly from the accounting journals)
+web/interni/audit-*.html
+tools/build_audit.py
