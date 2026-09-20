@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rozpočet obce Běloky</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>
+:root{
+  --bg:#0f172a; --bg2:#1e293b; --card:#1e293bcc; --card2:#0b1220;
+  --line:#334155; --txt:#e2e8f0; --mut:#94a3b8; --acc:#38bdf8;
+  --green:#34d399; --red:#fb7185; --amber:#fbbf24;
+  --radius:16px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;overflow-x:hidden;max-width:100%}
+canvas{max-width:100%!important}
+.legend .row{min-width:0}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  background:radial-gradient(1200px 600px at 80% -10%,#1e3a5f33,transparent),
+             radial-gradient(900px 500px at -10% 10%,#0e766e22,transparent),var(--bg);
+  color:var(--txt); line-height:1.5; -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px;margin:0 auto;padding:24px 20px 80px}
+header.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:8px}
+.brand h1{font-size:26px;margin:0;letter-spacing:-.4px;font-weight:750}
+.brand p{margin:4px 0 0;color:var(--mut);font-size:14px}
+.brand .ico{color:var(--acc)}
+.controls{display:flex;flex-direction:column;gap:10px;align-items:flex-end}
+.tabs{display:flex;gap:6px;background:var(--card2);padding:5px;border-radius:12px;border:1px solid var(--line)}
+.tab{appearance:none;border:0;background:transparent;color:var(--mut);font-weight:600;font-size:14px;
+  padding:8px 14px;border-radius:8px;cursor:pointer;transition:.15s}
+.tab:hover{color:var(--txt)}
+.tab.active{background:linear-gradient(180deg,#0ea5e9,#0284c7);color:#fff;box-shadow:0 4px 14px #0284c766}
+.seg{display:flex;gap:4px;font-size:12.5px;color:var(--mut)}
+.seg button{appearance:none;border:1px solid var(--line);background:var(--card2);color:var(--mut);
+  padding:6px 11px;border-radius:8px;cursor:pointer;font-weight:600;font-size:12.5px}
+.seg button.active{border-color:var(--acc);color:var(--acc);background:#0c4a6e33}
+/* režim Rozpočet = žlutá, ať je na první pohled jasné, na co se člověk dívá */
+#modeSeg button.active[data-mode="rozpocet"]{border-color:var(--amber);color:var(--amber);background:#78350f2e}
+.modechip{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.5px;padding:2px 8px;
+  border-radius:20px;margin-left:8px;vertical-align:2px;text-transform:uppercase;white-space:nowrap}
+.modechip.skut{background:#0ea5e91f;color:var(--acc);border:1px solid #0ea5e955}
+.modechip.rozp{background:#fbbf241f;color:var(--amber);border:1px solid #fbbf2455}
+th.colactive{color:var(--acc)}
+th.colactive.rozp{color:var(--amber)}
+
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:22px 0}
+.kpi{background:var(--card);backdrop-filter:blur(6px);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;position:relative;overflow:hidden}
+.kpi .lab{color:var(--mut);font-size:12.5px;font-weight:600;text-transform:uppercase;letter-spacing:.6px}
+.kpi .val{font-size:26px;font-weight:760;margin-top:6px;letter-spacing:-.5px}
+.kpi .sub{font-size:12.5px;margin-top:4px;color:var(--mut)}
+.kpi .delta{font-weight:700}
+.kpi.accent::after{content:"";position:absolute;inset:auto auto -30px -30px;width:120px;height:120px;border-radius:50%;background:#0ea5e933;filter:blur(20px)}
+.up{color:var(--green)} .down{color:var(--red)}
+.kpi .val small{font-size:13px;color:var(--mut);font-weight:600;letter-spacing:0}
+.note{margin-top:18px;padding:10px 14px;border:1px solid #fbbf2455;background:#fbbf2414;color:#fcd34d;
+  border-radius:10px;font-size:13px}
+
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;min-width:0;overflow:hidden}
+/* allow grid/flex items to shrink below their content min-content (prevents nowrap legend names from stretching panels) */
+.grid2,.kpis{min-width:0}
+.grid2>*,.kpis>*{min-width:0}
+.panel h2{font-size:15px;margin:0 0 2px;font-weight:700}
+.panel .hint{color:var(--mut);font-size:12.5px;margin:0 0 10px}
+.chartbox{position:relative;height:300px;min-width:0}
+.chartbox.tall{height:340px}
+
+.legend{margin-top:12px;display:flex;flex-direction:column;gap:2px;max-height:210px;overflow:auto}
+.legend .row{display:flex;align-items:center;gap:9px;padding:5px 7px;border-radius:8px;cursor:pointer;font-size:13px}
+.legend .row:hover{background:#ffffff0a}
+.legend .row.dim{opacity:.4}
+.legend .dot{width:11px;height:11px;border-radius:3px;flex:0 0 auto}
+.legend .nm{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.legend .am{color:var(--mut);font-variant-numeric:tabular-nums;font-weight:600}
+.legend .pc{color:var(--mut);font-size:11.5px;width:46px;text-align:right;font-variant-numeric:tabular-nums}
+
+/* --- rozpočet vs. skutečnost (bullet bary) --- */
+.pln{margin-bottom:18px}
+.pln .prow{display:flex;align-items:center;gap:12px;padding:6px 8px;border-radius:8px;cursor:pointer}
+.pln .prow:hover{background:#ffffff0a}
+.pln .prow.sum{cursor:default;font-weight:700}
+.pln .prow.sum:hover{background:transparent}
+.pln .pname{flex:0 0 30%;min-width:0;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pln .pbar{flex:1;position:relative;height:18px;min-width:0}
+.pln .ptrack{position:absolute;left:0;top:0;height:100%;background:#33415588;border:1px solid #33415555;border-radius:5px}
+.pln .pfill{position:absolute;left:0;top:3px;height:12px;background:linear-gradient(90deg,#38bdf8,#0284c7);border-radius:3px}
+.pln .pfill.green{background:linear-gradient(90deg,#34d399,#059669)}
+.pln .pover{position:absolute;top:3px;height:12px;background:#fb7185;border-radius:0 3px 3px 0}
+.pln .ptick{position:absolute;top:-3px;height:24px;width:2px;background:var(--amber);border-radius:1px}
+.pln .ticknote{color:var(--amber)}
+.pln .pnum{flex:0 0 auto;min-width:170px;text-align:right;font-size:12px;color:var(--mut);font-variant-numeric:tabular-nums;white-space:nowrap}
+.pln .pnum b{color:var(--txt);font-size:12.5px}
+.pln .ppct{display:inline-block;min-width:44px;font-weight:700}
+.pln .psep{height:1px;background:var(--line);margin:8px 0}
+/* mini bullet bar v tabulkách detailu (čerpání vs. rozpočet) */
+.bl{position:relative;display:block;height:14px;min-width:110px}
+.bl .t{position:absolute;left:0;top:0;height:100%;background:#33415588;border:1px solid #33415555;border-radius:4px}
+.bl .f{position:absolute;left:0;top:2px;height:10px;background:linear-gradient(90deg,#38bdf8,#0284c7);border-radius:2px}
+.bl .o{position:absolute;top:2px;height:10px;background:#fb7185;border-radius:0 2px 2px 0}
+.bl .o.g{background:var(--green)}
+.bl .s{position:absolute;top:-2px;height:18px;width:2px;background:var(--amber);border-radius:1px}
+
+/* --- analytická stránka --- */
+.anlbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:12px 0 14px}
+#anlQ{background:var(--card2);border:1px solid var(--line);color:var(--txt);border-radius:8px;
+  padding:6px 11px;font-size:13px;min-width:190px}
+#anlQ:focus{outline:none;border-color:var(--acc)}
+#anlBody{overflow-x:auto;-webkit-overflow-scrolling:touch}
+th.sortable{cursor:pointer;user-select:none;white-space:nowrap}
+th.sortable:hover{color:var(--txt)}
+th.sortable.on{color:var(--acc)}
+
+.drill{margin-top:18px}
+.drill .head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
+.drill .head .t{font-size:16px;font-weight:720}
+.drill .head .t small{display:block;color:var(--mut);font-weight:600;font-size:12.5px}
+.closebtn{appearance:none;border:1px solid var(--line);background:var(--card2);color:var(--mut);border-radius:8px;padding:6px 12px;cursor:pointer;font-weight:600}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line)}
+th{color:var(--mut);font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.4px}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.tot td{font-weight:750;border-top:2px solid var(--line);border-bottom:0}
+.bar{height:7px;border-radius:4px;background:linear-gradient(90deg,#38bdf8,#0284c7)}
+.code{color:var(--mut);font-variant-numeric:tabular-nums;font-size:12px}
+.plnpct{font-size:11.5px;color:var(--mut)}
+details.full{margin-top:18px}
+details.full>summary{cursor:pointer;font-weight:700;font-size:15px;padding:14px 18px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);list-style:none}
+details.full>summary::-webkit-details-marker{display:none}
+details.full>summary::before{content:"▸ ";color:var(--acc)}
+details.full[open]>summary::before{content:"▾ "}
+details.full .panel{border-top-left-radius:0;border-top-right-radius:0;border-top:0;margin-top:-1px}
+.parrow{cursor:pointer}
+.parrow:hover td{background:#ffffff0a}
+.subrow td{color:var(--mut);font-size:12.5px;background:#0b122055}
+.subrow td:first-child{padding-left:26px}
+.foot{color:var(--mut);font-size:12px;margin-top:26px;text-align:center;line-height:1.7}
+.foot a{color:var(--acc);text-decoration:none}
+.badge{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:20px;margin-left:8px}
+.badge.pre{background:#34d39922;color:var(--green)} .badge.def{background:#fb718522;color:var(--red)}
+#cmpView .grid2{grid-template-columns:1fr 1fr}
+/* table containers scroll horizontally instead of breaking layout */
+#drillBody,#fullVydajeBody,#fullPrijmyBody,#cmpTableBody{overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+@media(max-width:880px){
+  .kpis{grid-template-columns:1fr 1fr}
+  .grid2,#cmpView .grid2{grid-template-columns:1fr}
+  .controls{align-items:stretch}
+  .chartbox{height:260px}
+}
+@media(max-width:560px){
+  .wrap{padding:16px 12px 64px}
+  header.top{gap:10px}
+  .brand h1{font-size:21px}
+  .brand p{font-size:12px}
+  .brand .yrs{display:none}
+  .controls{width:100%}
+  /* záložky v jednom řádku s vodorovným posuvem místo zalamování */
+  .tabs{flex-wrap:nowrap;justify-content:flex-start;width:100%;overflow-x:auto;
+    -webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{flex:0 0 auto;padding:8px 11px;font-size:13px;text-align:center}
+  .seg{flex-wrap:wrap;justify-content:center}
+  .kpis{gap:10px;margin:16px 0}
+  .kpi{padding:13px 14px}
+  .kpi .val{font-size:21px}
+  .kpi .lab{font-size:11px;letter-spacing:.4px}
+  .panel{padding:14px}
+  .panel h2{font-size:14px}
+  .chartbox{height:230px}
+  .legend{max-height:none}
+  .legend .row{font-size:12px;padding:6px 4px}
+  .legend .am{font-size:12px}
+  .legend .pc{width:42px;font-size:11px}
+  /* full tables: keep usable width and let the container scroll sideways */
+  table{font-size:12px}
+  th,td{padding:7px 8px}
+  /* raději vodorovný posuv než rozlámaná čísla */
+  #anlBody table{min-width:520px}
+  #anlQ{flex:1 1 100%}
+  #drillBody table{min-width:430px}
+  #cmpTableBody table{min-width:470px}
+  #fullVydajeBody table,#fullPrijmyBody table{min-width:520px}
+  /* drop decorative / redundant columns on phones so detail tables fit without scrolling */
+  .barcell,.parcell,.schcell{display:none}
+  /* bullet bary: název nad barem, čísla pod ním vpravo */
+  .pln .prow{flex-wrap:wrap;gap:4px 10px;padding:8px 4px}
+  .pln .pname{flex:1 1 55%}
+  .pln .pnum{flex:1 1 auto;min-width:0;order:2}
+  .pln .pbar{flex:1 1 100%;order:3}
+  .subrow td:first-child{padding-left:16px}
+  details.full>summary{font-size:13.5px;padding:13px 14px}
+  .drill .head{flex-wrap:wrap}
+  .drill .head .t{font-size:14.5px}
+}
+.muted{color:var(--mut)}
+.spin{padding:60px;text-align:center;color:var(--mut)}
+/* odpady */
+.odpleg{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:5px 8px;border-radius:8px;font-size:13px}
+.odpleg+.odpleg{border-top:1px solid var(--line)}
+.odpleg .dot{width:11px;height:11px;border-radius:3px;flex:0 0 auto;display:inline-block;margin-right:8px;vertical-align:-1px}
+.odpleg .lname{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.odpleg .lsub{display:block;color:var(--mut);font-size:11.5px;margin-left:19px}
+.odpleg .lval{color:var(--mut);white-space:nowrap;font-variant-numeric:tabular-nums;flex:0 0 auto}
+ul.analyza{margin:8px 0 0;padding-left:18px;line-height:1.6}
+ul.analyza li{margin-bottom:10px}
+#odpView table{margin-top:4px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <h1>Rozpočet obce Běloky</h1>
+      <p>Plnění rozpočtu dle výkazů <strong>FIN 2-12 M</strong> · IČO <span class="ico" id="ico">—</span><span class="yrs"> · roky 2022–2026</span></p>
+    </div>
+    <div class="controls">
+      <div class="tabs" id="yearTabs"></div>
+      <div class="seg" id="modeSeg">
+        <span style="align-self:center;margin-right:4px">Zobrazit:</span>
+        <button data-mode="skutecnost" class="active" title="Skutečné plnění — reálně přijaté a vydané peníze od počátku roku">Skutečnost</button>
+        <button data-mode="rozpocet" title="Rozpočet po změnách — schválený plán včetně rozpočtových opatření">Rozpočet</button>
+      </div>
+      <div class="seg" id="capSeg">
+        <span style="align-self:center;margin-right:4px">Částky:</span>
+        <button data-cap="abs" class="active">Kč celkem</button>
+        <button data-cap="ob" title="Souhrny přepočtené na 1 obyvatele (detailní tabulky zůstávají v Kč)">Kč na obyvatele</button>
+      </div>
+    </div>
+  </header>
+
+  <div id="spin" class="spin">Načítám data…</div>
+
+  <div id="app" style="display:none">
+    <div class="note" id="partialNote" style="display:none"></div>
+    <section class="kpis" id="kpis"></section>
+
+    <div id="yearView">
+      <div class="grid2">
+        <div class="panel">
+          <h2>Výdaje podle paragrafů<span class="modechip"></span></h2>
+          <p class="hint">Klikni na výseč nebo položku v legendě pro detail rozpisu.</p>
+          <div class="chartbox"><canvas id="vydajeChart"></canvas></div>
+          <div class="legend" id="vydajeLegend"></div>
+        </div>
+        <div class="panel">
+          <h2>Příjmy podle druhu<span class="modechip"></span></h2>
+          <p class="hint">Daňové, nedaňové, kapitálové příjmy a dotace.</p>
+          <div class="chartbox"><canvas id="prijmyChart"></canvas></div>
+          <div class="legend" id="prijmyLegend"></div>
+        </div>
+      </div>
+
+      <div class="panel pln" id="plnPanel">
+        <h2>Rozpočet vs. skutečnost</h2>
+        <p class="hint">Šedý pruh = rozpočet po změnách · barevná výplň = skutečné čerpání (červeně nad rozpočet) ·
+          <span class="ticknote">žlutá značka</span> = původně schválený rozpočet. Klikni na kapitolu pro detail.</p>
+        <div id="plnBody"></div>
+      </div>
+
+      <div class="panel drill" id="drillPanel" style="display:none">
+        <div class="head">
+          <div class="t" id="drillTitle">—</div>
+          <button class="closebtn" id="drillClose">Zavřít ✕</button>
+        </div>
+        <div id="drillBody"></div>
+      </div>
+
+      <details class="full" id="fullVydaje" open>
+        <summary>Podrobný rozpis výdajů (paragrafy → položky)<span class="modechip"></span></summary>
+        <div class="panel"><div id="fullVydajeBody"></div></div>
+      </details>
+      <details class="full" id="fullPrijmy" open>
+        <summary>Podrobný rozpis příjmů (podle druhu → položky)<span class="modechip"></span></summary>
+        <div class="panel"><div id="fullPrijmyBody"></div></div>
+      </details>
+    </div>
+
+    <div id="anlView" style="display:none">
+      <div class="panel">
+        <h2>Analýza kapitol a položek</h2>
+        <p class="hint">Klikej na záhlaví sloupců pro řazení, na kapitolu pro rozpad na položky. Rozdíl = skutečnost − rozpočet.</p>
+        <div class="anlbar">
+          <div class="seg" id="anlRok"><span style="align-self:center;margin-right:4px">Rok:</span></div>
+          <div class="seg" id="anlSekce">
+            <button data-s="vydaje" class="active">Výdaje</button>
+            <button data-s="prijmy">Příjmy</button>
+          </div>
+          <div class="seg" id="anlUroven">
+            <button data-u="kapitoly" class="active">Kapitoly</button>
+            <button data-u="polozky">Položky</button>
+          </div>
+          <div class="seg" id="anlFiltr">
+            <button data-f="vse" class="active">Vše</button>
+            <button data-f="precerpane" title="skutečnost přesáhla rozpočet po změnách">Přečerpané</button>
+            <button data-f="nedocerpane" title="čerpáno méně než rozpočet">Nedočerpané</button>
+            <button data-f="necerpane" title="rozpočtováno, ale zatím bez čerpání">Nečerpané</button>
+          </div>
+          <input id="anlQ" type="search" placeholder="Hledat (název, kód, §)…">
+        </div>
+        <div id="anlBody"></div>
+      </div>
+    </div>
+
+    <div id="cmpView" style="display:none">
+      <div class="grid2">
+        <div class="panel">
+          <h2>Příjmy vs. výdaje od roku 2010<span class="modechip"></span></h2>
+          <p class="hint">Roční srovnání a saldo hospodaření. Roky 2010–2021: MONITOR státní pokladny
+            (konsolidováno, bez interních převodů mezi fondy obce).</p>
+          <div class="chartbox tall"><canvas id="cmpBars"></canvas></div>
+        </div>
+        <div class="panel">
+          <h2>Vývoj největších výdajů<span class="modechip"></span></h2>
+          <p class="hint">Top kapitoly výdajů v čase.</p>
+          <div class="chartbox tall"><canvas id="cmpTrend"></canvas></div>
+        </div>
+      </div>
+      <div class="panel">
+        <h2>Srovnávací tabulka<span class="modechip"></span></h2>
+        <div id="cmpTableBody"></div>
+      </div>
+    </div>
+
+    <div id="odpView" style="display:none">
+      <section class="kpis" id="odpKpis"></section>
+      <div class="grid2">
+        <div class="panel">
+          <h2>Náklady a jejich krytí v letech</h2>
+          <p class="hint">Výdaje na odpady (sloupce) proti tomu, co pokryjí poplatky občanů a odměna EKO-KOM.
+            Červená část = <strong>doplatek obce z ostatních daní</strong>. Zdroj: rozpočet, odvětvové členění §372x.</p>
+          <div class="chartbox tall"><canvas id="odpTrend"></canvas></div>
+        </div>
+        <div class="panel">
+          <h2>Soběstačnost odpadového hospodářství</h2>
+          <p class="hint">Kolik % nákladů na odpady zaplatí sami občané (poplatek) a EKO-KOM,
+            a kolik musí obec doplatit z ostatního rozpočtu.</p>
+          <div class="chartbox tall"><canvas id="odpSelf"></canvas></div>
+        </div>
+      </div>
+      <div class="grid2">
+        <div class="panel">
+          <h2>Tříděný sběr — odměna EKO-KOM</h2>
+          <p class="hint">Kolik obec vytřídila a co za to dostala zpět (výroční přehled EKO-KOM za rok 2025).</p>
+          <div id="odpEkokom"></div>
+        </div>
+        <div class="panel">
+          <h2>Za co konkrétně platíme svoz</h2>
+          <p class="hint">Struktura pravidelného fakturovaného svozu podle komodity (faktury FCC Regios, 09/2025–08/2026). Mimořádné služby (např. velkoobjemové kontejnery) zahrnuty nejsou.</p>
+          <div class="chartbox"><canvas id="odpStruktura"></canvas></div>
+          <div id="odpStrukturaLegend"></div>
+        </div>
+      </div>
+      <div class="panel">
+        <h2>Z čeho se skládají náklady</h2>
+        <p class="hint">Souhrny plateb z účetnictví obce (§372x) po druzích služeb, roky 2023–2025. Pravidelný svoz FCC je rozdělený na směsný a tříděný podle položek faktur. Vidět je nástup
+          velkoobjemových kontejnerů a bioodpadu. Deník 2025 je exportován k 10.&nbsp;12. — prosincové platby
+          (šedý díl) v něm zatím chybí, celkové součty odpovídají výkazům FIN.</p>
+        <div class="chartbox" style="height:230px"><canvas id="odpSluzby"></canvas></div>
+      </div>
+      <div class="panel">
+        <h2>Vývoj v letech — podrobně</h2>
+        <div id="odpTableBody"></div>
+      </div>
+      <div class="panel" id="odpAnalyza"></div>
+    </div>
+  </div>
+
+  <p class="foot" id="foot"></p>
+</div>
+
+<script src="vendor/chart.umd.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,232 @@
+{
+ "obec": "Běloky",
+ "ico": "00234125",
+ "zdroj": "MONITOR státní pokladny (§37xx) + EKO-KOM výroční dopis 2025 + faktury FCC Regios",
+ "roky": [
+  {
+   "rok": 2019,
+   "k": "31.12.2019",
+   "neuplny": false,
+   "vydaje": 201392.32,
+   "v_nebezpecny": 13530.61,
+   "v_smesny": 88548.12,
+   "v_trideny": 99313.59,
+   "ekokom": 55462.0,
+   "poplatek": 90000.0,
+   "doplatek": 55930.32,
+   "obyvatele": 181,
+   "doplatek_obyv": 309
+  },
+  {
+   "rok": 2020,
+   "k": "31.12.2020",
+   "neuplny": false,
+   "vydaje": 228046.14,
+   "v_nebezpecny": 20663.55,
+   "v_smesny": 94454.26,
+   "v_trideny": 112928.33,
+   "ekokom": 52436.5,
+   "poplatek": 94100.0,
+   "doplatek": 81509.64,
+   "obyvatele": 181,
+   "doplatek_obyv": 450
+  },
+  {
+   "rok": 2021,
+   "k": "31.12.2021",
+   "neuplny": false,
+   "vydaje": 245529.06,
+   "v_nebezpecny": 16057.45,
+   "v_smesny": 97999.1,
+   "v_trideny": 131472.51,
+   "ekokom": 89391.5,
+   "poplatek": 94250.0,
+   "doplatek": 61887.56,
+   "obyvatele": 181,
+   "doplatek_obyv": 342
+  },
+  {
+   "rok": 2022,
+   "k": "31.12.2022",
+   "neuplny": false,
+   "vydaje": 321286.72,
+   "v_nebezpecny": 11756.45,
+   "v_smesny": 119584.12,
+   "v_trideny": 189946.15,
+   "ekokom": 72720.5,
+   "poplatek": 96150.0,
+   "doplatek": 152416.22,
+   "obyvatele": 190,
+   "doplatek_obyv": 802
+  },
+  {
+   "rok": 2023,
+   "k": "31.12.2023",
+   "neuplny": false,
+   "vydaje": 323324.55,
+   "v_nebezpecny": 12284.0,
+   "v_smesny": 106400.33,
+   "v_trideny": 204640.22,
+   "ekokom": 85313.0,
+   "poplatek": -12550.0,
+   "doplatek": 250561.55,
+   "obyvatele": 189,
+   "doplatek_obyv": 1326
+  },
+  {
+   "rok": 2024,
+   "k": "31.12.2024",
+   "neuplny": false,
+   "vydaje": 382176.53,
+   "v_nebezpecny": 0.0,
+   "v_smesny": 227258.14,
+   "v_trideny": 154918.39,
+   "ekokom": 91573.5,
+   "poplatek": 27350.0,
+   "doplatek": 263253.03,
+   "obyvatele": 184,
+   "doplatek_obyv": 1431
+  },
+  {
+   "rok": 2025,
+   "k": "31.12.2025",
+   "neuplny": false,
+   "vydaje": 554866.64,
+   "v_nebezpecny": 0.0,
+   "v_smesny": 148637.86,
+   "v_trideny": 406228.78,
+   "ekokom": 67428.5,
+   "poplatek": 72925.0,
+   "doplatek": 414513.14,
+   "obyvatele": 184,
+   "doplatek_obyv": 2253
+  }
+ ],
+ "ekokom_2025": {
+  "tuny": 19.378,
+  "castka": 90418.0,
+  "kg_obyv": 105.3,
+  "kvartaly": [
+   {
+    "q": "1Q",
+    "t": 4.387,
+    "kc": 21168.5
+   },
+   {
+    "q": "2Q",
+    "t": 5.389,
+    "kc": 24126.5
+   },
+   {
+    "q": "3Q",
+    "t": 5.025,
+    "kc": 23052.0
+   },
+   {
+    "q": "4Q",
+    "t": 4.577,
+    "kc": 22071.0
+   }
+  ]
+ },
+ "svoz_struktura": {
+  "zaklad_celkem": 270201,
+  "obdobi": "09/2025–08/2026 (12 měsíců)",
+  "polozky": [
+   {
+    "kod": "smesny",
+    "nazev": "Směsný odpad",
+    "kc": 115311,
+    "skupina": "směsný",
+    "nadoby": "82× 110 l + 4× 240 l",
+    "svoz": "26× ročně (1× za 14 dní)"
+   },
+   {
+    "kod": "plast",
+    "nazev": "Plast",
+    "kc": 64480,
+    "skupina": "tříděný",
+    "nadoby": "4× 1100 l",
+    "svoz": "52× ročně (každý týden)"
+   },
+   {
+    "kod": "papir",
+    "nazev": "Papír",
+    "kc": 57200,
+    "skupina": "tříděný",
+    "nadoby": "2× 1100 l",
+    "svoz": "104× ročně (2× týdně)"
+   },
+   {
+    "kod": "sklo",
+    "nazev": "Sklo",
+    "kc": 12480,
+    "skupina": "tříděný",
+    "nadoby": "2× 1100 l",
+    "svoz": "26× ročně"
+   },
+   {
+    "kod": "kovy",
+    "nazev": "Kovy",
+    "kc": 8580,
+    "skupina": "tříděný",
+    "nadoby": "1× 660 l",
+    "svoz": "26× ročně"
+   },
+   {
+    "kod": "napojove_kartony",
+    "nazev": "Nápojové kartony",
+    "kc": 8190,
+    "skupina": "tříděný",
+    "nadoby": "1× 1100 l",
+    "svoz": "26× ročně"
+   },
+   {
+    "kod": "oleje",
+    "nazev": "Jedlé oleje",
+    "kc": 3960,
+    "skupina": "ostatní",
+    "nadoby": "1× 240 l",
+    "svoz": "12× ročně"
+   }
+  ],
+  "pozn_nadoby": "Směsné popelnice u domácností: do dubna 2026 jich bylo 80× 110 l + 3× 240 l, od května 2026 je jich 82× 110 l + 4× 240 l. Kontejnery na tříděný odpad jsou na sběrných místech obce."
+ },
+ "rok_2026_ytd": {
+  "k": "30.6.2026",
+  "vydaje": 240308.66,
+  "ekokom": 71233.0,
+  "poplatek": 66106.0,
+  "doplatek": 102969.66,
+  "obyvatele": 181
+ },
+ "sluzby": {
+  "zdroj": "účetní deníky obce (souhrny po druzích služeb)",
+  "roky": {
+   "2023": {
+    "svoz_smesny": 90688.46,
+    "svoz_trideny": 137309.87,
+    "svoz_dalsi": 907.5,
+    "ostatni": 94418.72
+   },
+   "2024": {
+    "svoz_smesny": 116764.78,
+    "svoz_trideny": 166669.45,
+    "svoz_dalsi": 40220.8,
+    "ostatni": 9879.5,
+    "kontejnery": 48642.0
+   },
+   "2025": {
+    "svoz_smesny": 133669.52,
+    "svoz_trideny": 187416.6,
+    "svoz_dalsi": 53749.76,
+    "vybaveni": 3059.0,
+    "kontejnery": 68431.0,
+    "bioodpad": 9196.0,
+    "nezauctovano": 99344.77
+   }
+  },
+  "pozn_2025": "deník 2025 exportován k 10. 12. 2025 — prosincové platby chybí",
+  "pozn_svoz": "Pravidelný svoz FCC je rozdělen podle položek faktur (nádoby 110/240 l = směsný; papír, plast, sklo, kovy, nápojové kartony a jedlé oleje = tříděný). Účetní paragrafy §3722/§3723 se pro toto dělení nedají použít, obec je účtuje v každém roce jinak. Položka „další faktury FCC“ jsou platby zaúčtované jako svoz odpadu nad rámec pravidelné měsíční faktury (mimořádné svozy, nerozlišeno)."
+ }
+}

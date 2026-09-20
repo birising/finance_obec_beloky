@@ -1,0 +1,15 @@
+# Internal-only data (accounting journals, bank exports, analyses) — never commit
+web/interni/denik.json
+web/interni/kb_*
+web/interni/analyza-*.html
+data/odpady/
+
+# Local environment / editor / OS
+.budget_venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+*.bak
+*.pre-*
+.env

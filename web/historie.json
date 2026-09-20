@@ -1,0 +1,150 @@
+{
+ "ico": "00234125",
+ "zdroj": "monitor.statnipokladna.gov.cz",
+ "roky": {
+  "2010": {
+   "prijmy_celkem": 1427550.0,
+   "vydaje_celkem": 2762730.0,
+   "prijmy_rozpocet": 1427410.0,
+   "vydaje_rozpocet": 2762840.0,
+   "prijmy_schvaleny": 1137900.0,
+   "vydaje_schvaleny": 1340800.0,
+   "vydaje_investice": 1303070.0
+  },
+  "2011": {
+   "prijmy_celkem": 1637792.83,
+   "vydaje_celkem": 1549766.68,
+   "prijmy_rozpocet": 1637703.0,
+   "vydaje_rozpocet": 1550628.0,
+   "prijmy_schvaleny": 1219100.0,
+   "vydaje_schvaleny": 1219100.0,
+   "vydaje_investice": 472800.0
+  },
+  "2012": {
+   "prijmy_celkem": 1664914.16,
+   "vydaje_celkem": 1468670.39,
+   "prijmy_rozpocet": 1664764.0,
+   "vydaje_rozpocet": 1469006.0,
+   "prijmy_schvaleny": 1486600.0,
+   "vydaje_schvaleny": 1186600.0,
+   "vydaje_investice": 84300.0
+  },
+  "2013": {
+   "prijmy_celkem": 3126389.19,
+   "vydaje_celkem": 3222702.83,
+   "prijmy_rozpocet": 3126389.19,
+   "vydaje_rozpocet": 3222702.83,
+   "prijmy_schvaleny": 1485100.0,
+   "vydaje_schvaleny": 1485100.0,
+   "vydaje_investice": 1811211.6
+  },
+  "2014": {
+   "prijmy_celkem": 1852885.51,
+   "vydaje_celkem": 1013489.79,
+   "prijmy_rozpocet": 1852885.51,
+   "vydaje_rozpocet": 1013489.79,
+   "prijmy_schvaleny": 1618010.0,
+   "vydaje_schvaleny": 1618010.0,
+   "vydaje_investice": 67917.0
+  },
+  "2015": {
+   "prijmy_celkem": 2414636.48,
+   "vydaje_celkem": 2936471.3,
+   "prijmy_rozpocet": 2414636.48,
+   "vydaje_rozpocet": 2936471.3,
+   "prijmy_schvaleny": 1746100.0,
+   "vydaje_schvaleny": 2603100.0,
+   "vydaje_investice": 1337397.0
+  },
+  "2016": {
+   "prijmy_celkem": 2193711.58,
+   "vydaje_celkem": 1618725.82,
+   "prijmy_rozpocet": 2193712.58,
+   "vydaje_rozpocet": 1619725.82,
+   "prijmy_schvaleny": 1817500.0,
+   "vydaje_schvaleny": 1934500.0,
+   "vydaje_investice": 244998.0
+  },
+  "2017": {
+   "prijmy_celkem": 2273990.24,
+   "vydaje_celkem": 2635952.84,
+   "prijmy_rozpocet": 2273990.24,
+   "vydaje_rozpocet": 2635953.04,
+   "prijmy_schvaleny": 1926400.0,
+   "vydaje_schvaleny": 2386820.14,
+   "vydaje_investice": 20500.0
+  },
+  "2018": {
+   "prijmy_celkem": 2999405.61,
+   "vydaje_celkem": 1477965.47,
+   "prijmy_rozpocet": 2999405.61,
+   "vydaje_rozpocet": 1482965.91,
+   "prijmy_schvaleny": 2081120.0,
+   "vydaje_schvaleny": 2081120.0,
+   "vydaje_investice": 168370.0
+  },
+  "2019": {
+   "prijmy_celkem": 2762291.68,
+   "vydaje_celkem": 1486730.33,
+   "prijmy_rozpocet": 2762291.68,
+   "vydaje_rozpocet": 1506730.33,
+   "prijmy_schvaleny": 2396000.0,
+   "vydaje_schvaleny": 2396000.0,
+   "vydaje_investice": 143496.0
+  },
+  "2020": {
+   "prijmy_celkem": 2916652.73,
+   "vydaje_celkem": 2902567.02,
+   "prijmy_rozpocet": 2916652.73,
+   "vydaje_rozpocet": 2909010.36,
+   "prijmy_schvaleny": 2579500.0,
+   "vydaje_schvaleny": 3579500.0,
+   "vydaje_investice": 1700000.0
+  },
+  "2021": {
+   "prijmy_celkem": 3010391.42,
+   "vydaje_celkem": 4959536.17,
+   "prijmy_rozpocet": 3010391.42,
+   "vydaje_rozpocet": 4960536.17,
+   "prijmy_schvaleny": 2262500.0,
+   "vydaje_schvaleny": 2962500.0,
+   "vydaje_investice": 309246.0
+  },
+  "2022": {
+   "prijmy_celkem": 3455018.85,
+   "vydaje_celkem": 2305467.35,
+   "prijmy_rozpocet": 3466245.57,
+   "vydaje_rozpocet": 3939532.15,
+   "prijmy_schvaleny": 2781900.0,
+   "vydaje_schvaleny": 3481900.0,
+   "vydaje_investice": 0.0
+  },
+  "2023": {
+   "prijmy_celkem": 4024193.41,
+   "vydaje_celkem": 2702028.58,
+   "prijmy_rozpocet": 4024193.41,
+   "vydaje_rozpocet": 3535881.46,
+   "prijmy_schvaleny": 3218049.0,
+   "vydaje_schvaleny": 3748231.0,
+   "vydaje_investice": 58350.0
+  },
+  "2024": {
+   "prijmy_celkem": 3868182.23,
+   "vydaje_celkem": 3328946.2,
+   "prijmy_rozpocet": 4051319.0,
+   "vydaje_rozpocet": 4515513.61,
+   "prijmy_schvaleny": 3444649.0,
+   "vydaje_schvaleny": 3681843.61,
+   "vydaje_investice": 111138.5
+  },
+  "2025": {
+   "prijmy_celkem": 4104174.22,
+   "vydaje_celkem": 4281010.95,
+   "prijmy_rozpocet": 3932239.0,
+   "vydaje_rozpocet": 5123904.7,
+   "prijmy_schvaleny": 3932239.0,
+   "vydaje_schvaleny": 5123904.7,
+   "vydaje_investice": 138151.0
+  }
+ }
+}

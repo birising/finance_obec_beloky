@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Interní přehled · obec Běloky</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<style>
+:root{
+  --bg:#0f172a; --bg2:#1e293b; --card:#1e293bcc; --card2:#0b1220;
+  --line:#334155; --txt:#e2e8f0; --mut:#94a3b8; --acc:#38bdf8;
+  --green:#34d399; --red:#fb7185; --amber:#fbbf24; --radius:14px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;overflow-x:hidden;max-width:100%}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  background:radial-gradient(1100px 500px at 85% -10%,#7c2d1222,transparent),
+             radial-gradient(900px 500px at -10% 10%,#1e3a5f33,transparent),var(--bg);
+  color:var(--txt);line-height:1.5;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1280px;margin:0 auto;padding:22px 20px 70px}
+header.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:14px}
+h1{font-size:23px;margin:0;letter-spacing:-.3px}
+h1 .tag{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.6px;padding:3px 9px;border-radius:20px;
+  background:#7c2d1233;color:#fdba74;border:1px solid #7c2d12aa;vertical-align:4px;margin-left:10px;text-transform:uppercase}
+.brand p{margin:3px 0 0;color:var(--mut);font-size:13px}
+.tabs{display:flex;gap:6px;background:var(--card2);padding:5px;border-radius:12px;border:1px solid var(--line);flex-wrap:wrap}
+.tab{appearance:none;border:0;background:transparent;color:var(--mut);font-weight:600;font-size:13.5px;
+  padding:8px 13px;border-radius:8px;cursor:pointer}
+.tab:hover{color:var(--txt)}
+.tab.active{background:linear-gradient(180deg,#ea580c,#c2410c);color:#fff}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px}
+.kpi .lab{color:var(--mut);font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px}
+.kpi .val{font-size:23px;font-weight:760;margin-top:5px;letter-spacing:-.4px}
+.kpi .sub{font-size:12px;margin-top:3px;color:var(--mut)}
+.up{color:var(--green)} .down{color:var(--red)} .muted{color:var(--mut)}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;min-width:0;overflow:hidden;margin-bottom:16px}
+.panel h2{font-size:15px;margin:0 0 2px;font-weight:700}
+.panel .hint{color:var(--mut);font-size:12.5px;margin:0 0 10px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.grid2>*{min-width:0}
+.chartbox{position:relative;height:320px;min-width:0}
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+th,td{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);white-space:nowrap}
+th{color:var(--mut);font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.4px;position:sticky;top:0;background:#141f33}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+tr.tot td{font-weight:750;border-top:2px solid var(--line)}
+.code{color:var(--mut);font-variant-numeric:tabular-nums;font-size:11.5px}
+.seg{display:inline-flex;gap:4px;font-size:12.5px;color:var(--mut);flex-wrap:wrap}
+.seg button{appearance:none;border:1px solid var(--line);background:var(--card2);color:var(--mut);
+  padding:5px 10px;border-radius:8px;cursor:pointer;font-weight:600;font-size:12.5px}
+.seg button.active{border-color:#fdba74;color:#fdba74;background:#7c2d1226}
+.alert{display:flex;gap:10px;align-items:flex-start;padding:9px 12px;border-radius:10px;margin-bottom:8px;font-size:13px;border:1px solid}
+.alert.err{background:#fb718511;border-color:#fb718544}
+.alert.warn{background:#fbbf2411;border-color:#fbbf2444}
+.alert.info{background:#38bdf811;border-color:#38bdf844}
+.alert .ic{flex:0 0 auto}
+.alert b{font-weight:700}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+/* kompaktní, ať se 17 let vejde na šířku obrazovky bez posuvu */
+.heat{font-size:11px}
+.heat th,.heat td{padding:3px 5px}
+.heat th{font-size:10px;letter-spacing:.2px}
+.heat td.h{text-align:right;font-variant-numeric:tabular-nums;font-size:10.5px;white-space:nowrap}
+.heat td.nm{max-width:175px;overflow:hidden;text-overflow:ellipsis;font-size:11px}
+.heat .code{font-size:10.5px}
+input[type=search]{background:var(--card2);border:1px solid var(--line);color:var(--txt);border-radius:8px;
+  padding:6px 10px;font-size:13px;min-width:200px}
+input[type=search]:focus{outline:none;border-color:#fdba74}
+.spin{padding:60px;text-align:center;color:var(--mut)}
+.foot{color:var(--mut);font-size:11.5px;margin-top:22px;text-align:center;line-height:1.7}
+.foot a{color:var(--acc);text-decoration:none}
+@media(max-width:880px){.kpis{grid-template-columns:1fr 1fr}.grid2{grid-template-columns:1fr}.chartbox{height:260px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <h1>Rozpočet Běloky<span class="tag">interní</span></h1>
+      <p>Pracovní přehled pro vedení obce · data: FIN 2-12 M + MONITOR státní pokladny · <span id="gen">—</span></p>
+    </div>
+    <div class="tabs" id="tabs">
+      <button class="tab active" data-v="prehled">Přehled &amp; alerty</button>
+      <button class="tab" data-v="cash">Cash-flow</button>
+      <button class="tab" data-v="kapitoly">Kapitoly 2010–2026</button>
+      <button class="tab" data-v="bench">Sousední obce</button>
+      <button class="tab" data-v="platby">Platby (deník)</button>
+    </div>
+  </header>
+
+  <div id="spin" class="spin">Načítám data…</div>
+  <div id="app" style="display:none">
+
+    <div data-view="prehled">
+      <section class="kpis" id="kpis"></section>
+      <div class="grid2">
+        <div class="panel">
+          <h2>Alerty rozpočtové kázně</h2>
+          <p class="hint">Kontroly nad aktuálním rokem (výkaz + RO). Závazný ukazatel = paragraf.</p>
+          <div id="alerty"></div>
+        </div>
+        <div class="panel">
+          <h2>Prognóza do konce roku</h2>
+          <p class="hint" id="progHint">Sezónní extrapolace podle průběhu let 2022–2025.</p>
+          <div id="prognoza"></div>
+        </div>
+      </div>
+      <div class="panel">
+        <h2>Vývoj rezervy obce</h2>
+        <p class="hint">Stav na účtech a v pokladně na konci roku (z výkazů FIN).</p>
+        <div class="chartbox" style="height:240px"><canvas id="rezervaChart"></canvas></div>
+      </div>
+    </div>
+
+    <div data-view="cash" style="display:none">
+      <div class="panel">
+        <h2>Měsíční cash-flow <span class="seg" id="cashRok" style="margin-left:10px"></span></h2>
+        <p class="hint">Sloupce = tok v měsíci (rozdíl kumulativ), čáry = kumulativně od začátku roku. Chybějící měsíce MONITOR nemá (výkaz se odevzdává ~čtvrtletně, mezi měsíci se dopočítává rozdíl za období).</p>
+        <div class="chartbox"><canvas id="cashChart"></canvas></div>
+      </div>
+      <div class="panel">
+        <h2>Kumulativní výdaje — srovnání let</h2>
+        <p class="hint">Jak rychle se čerpá v průběhu roku — silná čára = vybraný rok.</p>
+        <div class="chartbox"><canvas id="cumChart"></canvas></div>
+      </div>
+    </div>
+
+    <div data-view="kapitoly" style="display:none">
+      <div class="panel">
+        <h2>Výdaje po kapitolách 2010–2026 <input type="search" id="heatQ" placeholder="Filtr kapitol…" style="margin-left:12px"></h2>
+        <p class="hint">Skutečnost v tis. Kč, podbarveno podle výše v řádku. Řazeno podle součtu za celé období; 2026 průběžně. Zdroj: MONITOR (konsolidováno).</p>
+        <div class="scroll" id="heatBody" style="max-height:640px;overflow-y:auto"></div>
+      </div>
+    </div>
+
+    <div data-view="bench" style="display:none">
+      <section class="kpis" id="benchKpis"></section>
+      <div class="grid2">
+        <div class="panel">
+          <h2>Na obyvatele — poslední úplný rok <span id="benchRokLab" class="muted"></span></h2>
+          <p class="hint">Příjmy, výdaje a investice v Kč na obyvatele.</p>
+          <div class="chartbox"><canvas id="benchBar"></canvas></div>
+        </div>
+        <div class="panel">
+          <h2>Výdaje na obyvatele v čase</h2>
+          <p class="hint">2019–2025, Kč na obyvatele (aktuální počet obyvatel).</p>
+          <div class="chartbox"><canvas id="benchLine"></canvas></div>
+        </div>
+      </div>
+      <div class="panel">
+        <h2>Srovnávací tabulka</h2>
+        <div class="scroll" id="benchTable"></div>
+      </div>
+    </div>
+
+    <div data-view="platby" style="display:none">
+      <div class="panel">
+        <h2>Jednotlivé platby z účetního deníku
+          <span class="seg" id="platbyRok" style="margin-left:10px"></span>
+          <input type="search" id="platbyQ" placeholder="Hledat v poznámkách…" style="margin-left:12px">
+        </h2>
+        <p class="hint" id="platbyHint">Úhrady z bankovního účtu a pokladny (položky 5xxx/6xxx) seskupené po fakturách.
+          Interní data — neveřejné.</p>
+        <div class="scroll" id="platbyBody" style="max-height:560px;overflow-y:auto"></div>
+      </div>
+      <div class="grid2">
+        <div class="panel">
+          <h2>Odpady — jednotlivé platby (§372x)</h2>
+          <p class="hint">Detail k veřejné záložce Odpady: každá úhrada s kategorií služby.</p>
+          <div class="scroll" id="platbyOdpady" style="max-height:420px;overflow-y:auto"></div>
+        </div>
+        <div class="panel">
+          <h2>Součty po paragrafech (deník vs. výkaz)</h2>
+          <p class="hint">Kontrola úplnosti deníku proti FIN — velké rozdíly = platby mimo běžný účet/pokladnu
+            nebo neúplný export.</p>
+          <div class="scroll" id="platbyPar" style="max-height:420px;overflow-y:auto"></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <p class="foot">Neveřejný pracovní nástroj — čísla ověřuj proti oficiálním výkazům.
+    Veřejná stránka: <a href="../">rozpocet.obec-beloky.cz</a>. MONITOR: <a href="https://monitor.statnipokladna.gov.cz/ucetni-jednotka/00234125" target="_blank">profil obce</a>.</p>
+</div>
+<script src="../vendor/chart.umd.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

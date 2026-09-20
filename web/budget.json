@@ -1,0 +1,5475 @@
+{
+ "obec": "Běloky",
+ "ico": "00234125",
+ "obyvatele": {
+  "2022": 190,
+  "2023": 189,
+  "2024": 184,
+  "2025": 184,
+  "2026": 181
+ },
+ "roky": {
+  "2022": {
+   "k": "31.12.2022",
+   "prijmy": [
+    {
+     "paragraf": "",
+     "nazev": "Bez paragrafu",
+     "schvaleny": 2660400.0,
+     "rozpocet": 3305735.53,
+     "skutecnost": 3303335.31,
+     "polozky": [
+      {
+       "kod": "1111",
+       "text": "Příjem z daně z příjmů fyzických osob placené plátci",
+       "schvaleny": 375000.0,
+       "rozpocet": 449284.2,
+       "skutecnost": 449284.2
+      },
+      {
+       "kod": "1112",
+       "text": "Příjem z daně z příjmů fyzických osob placené poplatníky",
+       "schvaleny": 20000.0,
+       "rozpocet": 41616.04,
+       "skutecnost": 41616.04
+      },
+      {
+       "kod": "1113",
+       "text": "Příjem z daně z příjmů fyzických osob vybírané srážkou podle zvláštní sazby daně",
+       "schvaleny": 70000.0,
+       "rozpocet": 92503.71,
+       "skutecnost": 92503.71
+      },
+      {
+       "kod": "1121",
+       "text": "Příjem z daně z příjmů právnických osob",
+       "schvaleny": 620000.0,
+       "rozpocet": 699806.23,
+       "skutecnost": 699806.23
+      },
+      {
+       "kod": "1122",
+       "text": "Příjem z daně z příjmů právnických osob v případech, kdy poplatníkem je obec, s výjimkou daně vybírané srážkou podle zvláštní sazby daně",
+       "schvaleny": 7400.0,
+       "rozpocet": 7410.0,
+       "skutecnost": 7410.0
+      },
+      {
+       "kod": "1211",
+       "text": "Příjem z daně z přidané hodnoty",
+       "schvaleny": 1200000.0,
+       "rozpocet": 1588095.81,
+       "skutecnost": 1588095.81
+      },
+      {
+       "kod": "1341",
+       "text": "Příjem z poplatku ze psů",
+       "schvaleny": 5000.0,
+       "rozpocet": 2760.0,
+       "skutecnost": 360.0
+      },
+      {
+       "kod": "1345",
+       "text": "Příjem z poplatku za obecní systém odpadového hospodářství a příjem z poplatku za odkládání komunálního odpadu z nemovité věci",
+       "schvaleny": 100000.0,
+       "rozpocet": 96150.0,
+       "skutecnost": 96150.0
+      },
+      {
+       "kod": "1361",
+       "text": "Příjem ze správních poplatků",
+       "schvaleny": 0.0,
+       "rozpocet": 100.0,
+       "skutecnost": 100.0
+      },
+      {
+       "kod": "1381",
+       "text": "Příjem z daně z hazardních her s výjimkou dílčí daně z technických her",
+       "schvaleny": 18000.0,
+       "rozpocet": 22493.84,
+       "skutecnost": 22493.84
+      },
+      {
+       "kod": "1382",
+       "text": "Příjem ze zrušeného odvodu z loterií a podobných her kromě odvodu z výherních hracích přístrojů",
+       "schvaleny": 0.0,
+       "rozpocet": 16.08,
+       "skutecnost": 16.08
+      },
+      {
+       "kod": "1511",
+       "text": "Příjem z daně z nemovitých věcí",
+       "schvaleny": 175000.0,
+       "rozpocet": 213961.62,
+       "skutecnost": 213961.62
+      },
+      {
+       "kod": "4111",
+       "text": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "schvaleny": 0.0,
+       "rozpocet": 21038.0,
+       "skutecnost": 21037.78
+      },
+      {
+       "kod": "4112",
+       "text": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "schvaleny": 70000.0,
+       "rozpocet": 70500.0,
+       "skutecnost": 70500.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2341",
+     "nazev": "Vodní díla v zemědělské krajině",
+     "schvaleny": 500.0,
+     "rozpocet": 500.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "2131",
+       "text": "Příjem z pronájmu nebo pachtu pozemků",
+       "schvaleny": 500.0,
+       "rozpocet": 500.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3639",
+     "nazev": "Komunální služby a územní rozvoj jinde nezařazené",
+     "schvaleny": 0.0,
+     "rozpocet": 6000.0,
+     "skutecnost": 6000.0,
+     "polozky": [
+      {
+       "kod": "2329",
+       "text": "Ostatní nedaňové příjmy jinde nezařazené",
+       "schvaleny": 0.0,
+       "rozpocet": 6000.0,
+       "skutecnost": 6000.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3726",
+     "nazev": "Využívání a zneškodňování ostatních odpadů",
+     "schvaleny": 80000.0,
+     "rozpocet": 80000.0,
+     "skutecnost": 72720.5,
+     "polozky": [
+      {
+       "kod": "2324",
+       "text": "Přijaté neinvestiční příspěvky a náhrady",
+       "schvaleny": 80000.0,
+       "rozpocet": 80000.0,
+       "skutecnost": 72720.5
+      }
+     ]
+    },
+    {
+     "paragraf": "6171",
+     "nazev": "Činnost místní správy",
+     "schvaleny": 41000.0,
+     "rozpocet": 74010.04,
+     "skutecnost": 72963.04,
+     "polozky": [
+      {
+       "kod": "2131",
+       "text": "Příjem z pronájmu nebo pachtu pozemků",
+       "schvaleny": 41000.0,
+       "rozpocet": 41000.0,
+       "skutecnost": 39953.0
+      },
+      {
+       "kod": "2132",
+       "text": "Příjem z pronájmu nebo pachtu ostatních nemovitých věcí a jejich částí",
+       "schvaleny": 0.0,
+       "rozpocet": 28910.04,
+       "skutecnost": 28910.04
+      },
+      {
+       "kod": "3111",
+       "text": "Příjem z prodeje pozemků",
+       "schvaleny": 0.0,
+       "rozpocet": 4100.0,
+       "skutecnost": 4100.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6330",
+     "nazev": "Převody vlastním fondům v rozpočtech územní úrovně",
+     "schvaleny": 0.0,
+     "rozpocet": 0.0,
+     "skutecnost": 206000.0,
+     "polozky": [
+      {
+       "kod": "4134",
+       "text": "Převody z rozpočtových účtů",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 206000.0
+      }
+     ]
+    }
+   ],
+   "vydaje": [
+    {
+     "paragraf": "2212",
+     "nazev": "Silnice",
+     "schvaleny": 5000.0,
+     "rozpocet": 5000.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 5000.0,
+       "rozpocet": 5000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2219",
+     "nazev": "Ostatní záležitosti pozemních komunikací",
+     "schvaleny": 1134000.0,
+     "rozpocet": 1152739.0,
+     "skutecnost": 546692.54,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 15000.0,
+       "rozpocet": 15000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 10000.0,
+       "rozpocet": 10000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 5000.0,
+       "rozpocet": 5000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5156",
+       "text": "Pohonné hmoty a maziva",
+       "schvaleny": 4000.0,
+       "rozpocet": 4000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5171",
+       "text": "Opravy a udržování",
+       "schvaleny": 100000.0,
+       "rozpocet": 546692.54,
+       "skutecnost": 546692.54
+      },
+      {
+       "kod": "6121",
+       "text": "Stavby",
+       "schvaleny": 1000000.0,
+       "rozpocet": 572046.46,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2310",
+     "nazev": "Pitná voda",
+     "schvaleny": 30000.0,
+     "rozpocet": 33025.0,
+     "skutecnost": 3025.0,
+     "polozky": [
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 15000.0,
+       "rozpocet": 15000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 0.0,
+       "rozpocet": 3025.0,
+       "skutecnost": 3025.0
+      },
+      {
+       "kod": "5171",
+       "text": "Opravy a udržování",
+       "schvaleny": 15000.0,
+       "rozpocet": 15000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2321",
+     "nazev": "Odvádění a čistění odpadních vod a nakládání s kaly",
+     "schvaleny": 715000.0,
+     "rozpocet": 715000.0,
+     "skutecnost": 3025.0,
+     "polozky": [
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 15000.0,
+       "rozpocet": 15000.0,
+       "skutecnost": 3025.0
+      },
+      {
+       "kod": "6341",
+       "text": "Investiční transfery obcím",
+       "schvaleny": 700000.0,
+       "rozpocet": 700000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2339",
+     "nazev": "Záležitosti vodních toků a vodohospodářských děl jinde nezařazené",
+     "schvaleny": 2000.0,
+     "rozpocet": 2000.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 2000.0,
+       "rozpocet": 2000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2341",
+     "nazev": "Vodní díla v zemědělské krajině",
+     "schvaleny": 5000.0,
+     "rozpocet": 5000.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 5000.0,
+       "rozpocet": 5000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3326",
+     "nazev": "Pořízení, zachování a obnova hodnot místního kulturního, národního a historického povědomí",
+     "schvaleny": 24000.0,
+     "rozpocet": 24000.0,
+     "skutecnost": 4154.21,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 2000.0,
+       "rozpocet": 2000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 11000.0,
+       "rozpocet": 11000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5154",
+       "text": "Elektrická energie",
+       "schvaleny": 6000.0,
+       "rozpocet": 6000.0,
+       "skutecnost": 4154.21
+      },
+      {
+       "kod": "5175",
+       "text": "Pohoštění",
+       "schvaleny": 5000.0,
+       "rozpocet": 5000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3399",
+     "nazev": "Ostatní záležitosti kultury, církví a sdělovacích prostředků",
+     "schvaleny": 20000.0,
+     "rozpocet": 120000.0,
+     "skutecnost": 9422.0,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 3000.0,
+       "rozpocet": 6000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 0.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 2899.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 2000.0,
+       "rozpocet": 9000.0,
+       "skutecnost": 2299.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 10000.0,
+       "rozpocet": 77000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5175",
+       "text": "Pohoštění",
+       "schvaleny": 5000.0,
+       "rozpocet": 25000.0,
+       "skutecnost": 4224.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3421",
+     "nazev": "Využití volného času dětí a mládeže",
+     "schvaleny": 7000.0,
+     "rozpocet": 7000.0,
+     "skutecnost": 2706.0,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 1000.0,
+       "rozpocet": 1000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 2706.0
+      },
+      {
+       "kod": "5175",
+       "text": "Pohoštění",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3631",
+     "nazev": "Veřejné osvětlení",
+     "schvaleny": 95000.0,
+     "rozpocet": 135000.0,
+     "skutecnost": 128386.9,
+     "polozky": [
+      {
+       "kod": "5154",
+       "text": "Elektrická energie",
+       "schvaleny": 75000.0,
+       "rozpocet": 115900.0,
+       "skutecnost": 115890.49
+      },
+      {
+       "kod": "5171",
+       "text": "Opravy a udržování",
+       "schvaleny": 20000.0,
+       "rozpocet": 19100.0,
+       "skutecnost": 12496.41
+      }
+     ]
+    },
+    {
+     "paragraf": "3639",
+     "nazev": "Komunální služby a územní rozvoj jinde nezařazené",
+     "schvaleny": 40500.0,
+     "rozpocet": 40500.0,
+     "skutecnost": 3214.72,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 5000.0,
+       "rozpocet": 5000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 10000.0,
+       "rozpocet": 10000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 5000.0,
+       "rozpocet": 5000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5154",
+       "text": "Elektrická energie",
+       "schvaleny": 4000.0,
+       "rozpocet": 4000.0,
+       "skutecnost": 3214.72
+      },
+      {
+       "kod": "5156",
+       "text": "Pohonné hmoty a maziva",
+       "schvaleny": 1500.0,
+       "rozpocet": 1500.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 15000.0,
+       "rozpocet": 15000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3721",
+     "nazev": "Sběr a svoz nebezpečných odpadů",
+     "schvaleny": 20000.0,
+     "rozpocet": 20000.0,
+     "skutecnost": 11756.45,
+     "polozky": [
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 20000.0,
+       "rozpocet": 20000.0,
+       "skutecnost": 11756.45
+      }
+     ]
+    },
+    {
+     "paragraf": "3722",
+     "nazev": "Sběr a svoz komunálních odpadů",
+     "schvaleny": 130000.0,
+     "rozpocet": 130000.0,
+     "skutecnost": 119584.12,
+     "polozky": [
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 130000.0,
+       "rozpocet": 130000.0,
+       "skutecnost": 119584.12
+      }
+     ]
+    },
+    {
+     "paragraf": "3723",
+     "nazev": "Sběr a svoz ostatních odpadů jiných než nebezpečných a komunálních",
+     "schvaleny": 140000.0,
+     "rozpocet": 189946.15,
+     "skutecnost": 189946.15,
+     "polozky": [
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 0.0,
+       "rozpocet": 32791.0,
+       "skutecnost": 32791.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 140000.0,
+       "rozpocet": 157155.15,
+       "skutecnost": 157155.15
+      }
+     ]
+    },
+    {
+     "paragraf": "3745",
+     "nazev": "Péče o vzhled obcí a veřejnou zeleň",
+     "schvaleny": 228000.0,
+     "rozpocet": 533442.0,
+     "skutecnost": 509461.75,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 100000.0,
+       "rozpocet": 119000.0,
+       "skutecnost": 118769.0
+      },
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 25000.0,
+       "rozpocet": 6000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 20000.0,
+       "rozpocet": 145259.0,
+       "skutecnost": 145259.0
+      },
+      {
+       "kod": "5156",
+       "text": "Pohonné hmoty a maziva",
+       "schvaleny": 25000.0,
+       "rozpocet": 25000.0,
+       "skutecnost": 14301.0
+      },
+      {
+       "kod": "5167",
+       "text": "Služby školení a vzdělávání",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 15000.0,
+       "rozpocet": 217283.0,
+       "skutecnost": 217210.75
+      },
+      {
+       "kod": "5171",
+       "text": "Opravy a udržování",
+       "schvaleny": 40000.0,
+       "rozpocet": 17900.0,
+       "skutecnost": 13922.0
+      }
+     ]
+    },
+    {
+     "paragraf": "5213",
+     "nazev": "Krizová opatření",
+     "schvaleny": 5000.0,
+     "rozpocet": 5000.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5903",
+       "text": "Rezerva na krizová opatření",
+       "schvaleny": 5000.0,
+       "rozpocet": 5000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "5512",
+     "nazev": "Požární ochrana - dobrovolná část",
+     "schvaleny": 15000.0,
+     "rozpocet": 15000.0,
+     "skutecnost": 15000.0,
+     "polozky": [
+      {
+       "kod": "5321",
+       "text": "Neinvestiční transfery obcím",
+       "schvaleny": 15000.0,
+       "rozpocet": 15000.0,
+       "skutecnost": 15000.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6112",
+     "nazev": "Zastupitelstva obcí",
+     "schvaleny": 174500.0,
+     "rozpocet": 220595.0,
+     "skutecnost": 220595.0,
+     "polozky": [
+      {
+       "kod": "5023",
+       "text": "Odměny členů zastupitelstev obcí a krajů",
+       "schvaleny": 160000.0,
+       "rozpocet": 205174.0,
+       "skutecnost": 205174.0
+      },
+      {
+       "kod": "5032",
+       "text": "Povinné pojistné na veřejné zdravotní pojištění",
+       "schvaleny": 14500.0,
+       "rozpocet": 15421.0,
+       "skutecnost": 15421.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6115",
+     "nazev": "Volby do zastupitelstev územních samosprávných celků",
+     "schvaleny": 15000.0,
+     "rozpocet": 15000.0,
+     "skutecnost": 8841.0,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 0.0,
+       "rozpocet": 6927.0,
+       "skutecnost": 6927.0
+      },
+      {
+       "kod": "5023",
+       "text": "Odměny členů zastupitelstev obcí a krajů",
+       "schvaleny": 12000.0,
+       "rozpocet": 4159.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 2000.0,
+       "rozpocet": 2000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5175",
+       "text": "Pohoštění",
+       "schvaleny": 1000.0,
+       "rozpocet": 1914.0,
+       "skutecnost": 1914.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6171",
+     "nazev": "Činnost místní správy",
+     "schvaleny": 673900.0,
+     "rozpocet": 568285.0,
+     "skutecnost": 527718.51,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 20000.0,
+       "rozpocet": 20950.0,
+       "skutecnost": 20950.0
+      },
+      {
+       "kod": "5038",
+       "text": "Pojistné na zákonné pojištění odpovědnosti zaměstnavatele za škodu při pracovním úrazu nebo nemoci z povolání",
+       "schvaleny": 400.0,
+       "rozpocet": 400.0,
+       "skutecnost": 400.0
+      },
+      {
+       "kod": "5136",
+       "text": "Knihy a obdobné listinné informační prostředky",
+       "schvaleny": 2000.0,
+       "rozpocet": 220.32,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 237000.0,
+       "rozpocet": 128168.68,
+       "skutecnost": 128168.68
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 20000.0,
+       "rozpocet": 26093.9,
+       "skutecnost": 26093.9
+      },
+      {
+       "kod": "5151",
+       "text": "Studená voda včetně stočného a úplaty za odvod dešťových vod",
+       "schvaleny": 2000.0,
+       "rozpocet": 712.26,
+       "skutecnost": -85.0
+      },
+      {
+       "kod": "5153",
+       "text": "Plyn",
+       "schvaleny": 30000.0,
+       "rozpocet": 43537.74,
+       "skutecnost": 43537.74
+      },
+      {
+       "kod": "5154",
+       "text": "Elektrická energie",
+       "schvaleny": 20000.0,
+       "rozpocet": 20000.0,
+       "skutecnost": 10701.93
+      },
+      {
+       "kod": "5161",
+       "text": "Poštovní služby",
+       "schvaleny": 2000.0,
+       "rozpocet": 2000.0,
+       "skutecnost": 1070.4
+      },
+      {
+       "kod": "5162",
+       "text": "Služby elektronických komunikací",
+       "schvaleny": 35000.0,
+       "rozpocet": 28906.1,
+       "skutecnost": 28056.89
+      },
+      {
+       "kod": "5163",
+       "text": "Služby peněžních ústavů",
+       "schvaleny": 13000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 468.0
+      },
+      {
+       "kod": "5166",
+       "text": "Konzultační, poradenské a právní služby",
+       "schvaleny": 10000.0,
+       "rozpocet": 20000.0,
+       "skutecnost": 20000.0
+      },
+      {
+       "kod": "5167",
+       "text": "Služby školení a vzdělávání",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5168",
+       "text": "Zpracování dat a služby související s informačními a komunikačními technologiemi",
+       "schvaleny": 90000.0,
+       "rozpocet": 111385.0,
+       "skutecnost": 109756.7
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 130000.0,
+       "rozpocet": 97800.0,
+       "skutecnost": 90110.16
+      },
+      {
+       "kod": "5171",
+       "text": "Opravy a udržování",
+       "schvaleny": 20000.0,
+       "rozpocet": 27200.0,
+       "skutecnost": 27200.0
+      },
+      {
+       "kod": "5172",
+       "text": "Podlimitní programové vybavení",
+       "schvaleny": 12000.0,
+       "rozpocet": 17000.0,
+       "skutecnost": 16408.0
+      },
+      {
+       "kod": "5173",
+       "text": "Cestovné",
+       "schvaleny": 1000.0,
+       "rozpocet": 1000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5175",
+       "text": "Pohoštění",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5182",
+       "text": "Převody vlastní pokladně",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": -8330.0
+      },
+      {
+       "kod": "5222",
+       "text": "Neinvestiční transfery spolkům",
+       "schvaleny": 3500.0,
+       "rozpocet": 3500.0,
+       "skutecnost": 2801.02
+      },
+      {
+       "kod": "5361",
+       "text": "Nákup kolků",
+       "schvaleny": 5000.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5362",
+       "text": "Platby daní státnímu rozpočtu",
+       "schvaleny": 15000.0,
+       "rozpocet": 7410.0,
+       "skutecnost": 7410.0
+      },
+      {
+       "kod": "5363",
+       "text": "Úhrady sankcí jiným rozpočtům",
+       "schvaleny": 0.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 3000.0
+      },
+      {
+       "kod": "5909",
+       "text": "Ostatní neinvestiční výdaje jinde nezařazené",
+       "schvaleny": 0.0,
+       "rozpocet": 1.0,
+       "skutecnost": 0.09
+      }
+     ]
+    },
+    {
+     "paragraf": "6310",
+     "nazev": "Obecné příjmy a výdaje z finančních operací",
+     "schvaleny": 3000.0,
+     "rozpocet": 3000.0,
+     "skutecnost": 1938.0,
+     "polozky": [
+      {
+       "kod": "5163",
+       "text": "Služby peněžních ústavů",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 1938.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6330",
+     "nazev": "Převody vlastním fondům v rozpočtech územní úrovně",
+     "schvaleny": 0.0,
+     "rozpocet": 0.0,
+     "skutecnost": 206000.0,
+     "polozky": [
+      {
+       "kod": "5345",
+       "text": "Převody vlastním rozpočtovým účtům",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 156000.0
+      },
+      {
+       "kod": "5348",
+       "text": "Převody do vlastní pokladny",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 50000.0
+      }
+     ]
+    }
+   ],
+   "prijmy_celkem": 3661018.85,
+   "vydaje_celkem": 2511467.35,
+   "prijmy_rozpocet": 3466245.57,
+   "vydaje_rozpocet": 3939532.15,
+   "prijmy_schvaleny": 2781900.0,
+   "vydaje_schvaleny": 3481900.0,
+   "ucty": {
+    "pocatek": 1759948.03,
+    "konec": 2909499.53
+   }
+  },
+  "2023": {
+   "k": "31.12.2023",
+   "prijmy": [
+    {
+     "paragraf": "",
+     "nazev": "Bez paragrafu",
+     "schvaleny": 3061639.0,
+     "rozpocet": 3757134.45,
+     "skutecnost": 3757134.45,
+     "polozky": [
+      {
+       "kod": "1111",
+       "text": "Příjem z daně z příjmů fyzických osob placené plátci",
+       "schvaleny": 475000.0,
+       "rozpocet": 511470.65,
+       "skutecnost": 511470.65
+      },
+      {
+       "kod": "1112",
+       "text": "Příjem z daně z příjmů fyzických osob placené poplatníky",
+       "schvaleny": 20000.0,
+       "rozpocet": 43388.71,
+       "skutecnost": 43388.71
+      },
+      {
+       "kod": "1113",
+       "text": "Příjem z daně z příjmů fyzických osob vybírané srážkou podle zvláštní sazby daně",
+       "schvaleny": 70000.0,
+       "rozpocet": 125243.27,
+       "skutecnost": 125243.27
+      },
+      {
+       "kod": "1121",
+       "text": "Příjem z daně z příjmů právnických osob",
+       "schvaleny": 670000.0,
+       "rozpocet": 907449.32,
+       "skutecnost": 907449.32
+      },
+      {
+       "kod": "1122",
+       "text": "Příjem z daně z příjmů právnických osob v případech, kdy poplatníkem je obec, s výjimkou daně vybírané srážkou podle zvláštní sazby daně",
+       "schvaleny": 7410.0,
+       "rozpocet": 163210.0,
+       "skutecnost": 163210.0
+      },
+      {
+       "kod": "1211",
+       "text": "Příjem z daně z přidané hodnoty",
+       "schvaleny": 1450000.0,
+       "rozpocet": 1635187.85,
+       "skutecnost": 1635187.85
+      },
+      {
+       "kod": "1341",
+       "text": "Příjem z poplatku ze psů",
+       "schvaleny": 2760.0,
+       "rozpocet": 2130.0,
+       "skutecnost": 2130.0
+      },
+      {
+       "kod": "1345",
+       "text": "Příjem z poplatku za obecní systém odpadového hospodářství a příjem z poplatku za odkládání komunálního odpadu z nemovité věci",
+       "schvaleny": 93500.0,
+       "rozpocet": -12550.0,
+       "skutecnost": -12550.0
+      },
+      {
+       "kod": "1361",
+       "text": "Příjem ze správních poplatků",
+       "schvaleny": 0.0,
+       "rozpocet": 500.0,
+       "skutecnost": 500.0
+      },
+      {
+       "kod": "1381",
+       "text": "Příjem z daně z hazardních her s výjimkou dílčí daně z technických her",
+       "schvaleny": 18000.0,
+       "rozpocet": 23158.73,
+       "skutecnost": 23158.73
+      },
+      {
+       "kod": "1382",
+       "text": "Příjem ze zrušeného odvodu z loterií a podobných her kromě odvodu z výherních hracích přístrojů",
+       "schvaleny": 0.0,
+       "rozpocet": 0.27,
+       "skutecnost": 0.27
+      },
+      {
+       "kod": "1511",
+       "text": "Příjem z daně z nemovitých věcí",
+       "schvaleny": 175000.0,
+       "rozpocet": 221865.65,
+       "skutecnost": 221865.65
+      },
+      {
+       "kod": "4111",
+       "text": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "schvaleny": 9469.0,
+       "rozpocet": 30680.0,
+       "skutecnost": 30680.0
+      },
+      {
+       "kod": "4112",
+       "text": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "schvaleny": 70500.0,
+       "rozpocet": 105400.0,
+       "skutecnost": 105400.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2341",
+     "nazev": "Vodní díla v zemědělské krajině",
+     "schvaleny": 500.0,
+     "rozpocet": 0.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "2131",
+       "text": "Příjem z pronájmu nebo pachtu pozemků",
+       "schvaleny": 500.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3639",
+     "nazev": "Komunální služby a územní rozvoj jinde nezařazené",
+     "schvaleny": 6000.0,
+     "rozpocet": 0.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "2329",
+       "text": "Ostatní nedaňové příjmy jinde nezařazené",
+       "schvaleny": 6000.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3726",
+     "nazev": "Využívání a zneškodňování ostatních odpadů",
+     "schvaleny": 80000.0,
+     "rozpocet": 85313.0,
+     "skutecnost": 85313.0,
+     "polozky": [
+      {
+       "kod": "2324",
+       "text": "Přijaté neinvestiční příspěvky a náhrady",
+       "schvaleny": 80000.0,
+       "rozpocet": 85313.0,
+       "skutecnost": 85313.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6171",
+     "nazev": "Činnost místní správy",
+     "schvaleny": 69910.0,
+     "rozpocet": 181745.96,
+     "skutecnost": 181745.96,
+     "polozky": [
+      {
+       "kod": "2111",
+       "text": "Příjem z poskytování služeb, výrobků, prací, výkonů a práv",
+       "schvaleny": 0.0,
+       "rozpocet": 7733.0,
+       "skutecnost": 7733.0
+      },
+      {
+       "kod": "2131",
+       "text": "Příjem z pronájmu nebo pachtu pozemků",
+       "schvaleny": 41000.0,
+       "rozpocet": 65750.0,
+       "skutecnost": 65750.0
+      },
+      {
+       "kod": "2132",
+       "text": "Příjem z pronájmu nebo pachtu ostatních nemovitých věcí a jejich částí",
+       "schvaleny": 28910.0,
+       "rozpocet": 59382.96,
+       "skutecnost": 59382.96
+      },
+      {
+       "kod": "2321",
+       "text": "Přijaté peněžité neinvestiční dary",
+       "schvaleny": 0.0,
+       "rozpocet": 48880.0,
+       "skutecnost": 48880.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6330",
+     "nazev": "Převody vlastním fondům v rozpočtech územní úrovně",
+     "schvaleny": 0.0,
+     "rozpocet": 350000.0,
+     "skutecnost": 350000.0,
+     "polozky": [
+      {
+       "kod": "4134",
+       "text": "Převody z rozpočtových účtů",
+       "schvaleny": 0.0,
+       "rozpocet": 350000.0,
+       "skutecnost": 350000.0
+      }
+     ]
+    }
+   ],
+   "vydaje": [
+    {
+     "paragraf": "2212",
+     "nazev": "Silnice",
+     "schvaleny": 5000.0,
+     "rozpocet": 21018.0,
+     "skutecnost": 21018.0,
+     "polozky": [
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 0.0,
+       "rozpocet": 21018.0,
+       "skutecnost": 21018.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 5000.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2219",
+     "nazev": "Ostatní záležitosti pozemních komunikací",
+     "schvaleny": 617739.0,
+     "rozpocet": 384631.0,
+     "skutecnost": 175822.76,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 15000.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 10000.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 5000.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5156",
+       "text": "Pohonné hmoty a maziva",
+       "schvaleny": 4000.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 0.0,
+       "rozpocet": 50091.0,
+       "skutecnost": 50091.0
+      },
+      {
+       "kod": "5171",
+       "text": "Opravy a udržování",
+       "schvaleny": 118739.0,
+       "rozpocet": 118739.0,
+       "skutecnost": 72381.76
+      },
+      {
+       "kod": "6121",
+       "text": "Stavby",
+       "schvaleny": 465000.0,
+       "rozpocet": 215801.0,
+       "skutecnost": 53350.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2310",
+     "nazev": "Pitná voda",
+     "schvaleny": 33025.0,
+     "rozpocet": 0.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 15000.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 3025.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5171",
+       "text": "Opravy a udržování",
+       "schvaleny": 15000.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2321",
+     "nazev": "Odvádění a čistění odpadních vod a nakládání s kaly",
+     "schvaleny": 715000.0,
+     "rozpocet": 453184.81,
+     "skutecnost": 453184.81,
+     "polozky": [
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 15000.0,
+       "rozpocet": 453184.81,
+       "skutecnost": 453184.81
+      },
+      {
+       "kod": "6341",
+       "text": "Investiční transfery obcím",
+       "schvaleny": 700000.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2339",
+     "nazev": "Záležitosti vodních toků a vodohospodářských děl jinde nezařazené",
+     "schvaleny": 2000.0,
+     "rozpocet": 0.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 2000.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2341",
+     "nazev": "Vodní díla v zemědělské krajině",
+     "schvaleny": 5000.0,
+     "rozpocet": 0.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 5000.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3326",
+     "nazev": "Pořízení, zachování a obnova hodnot místního kulturního, národního a historického povědomí",
+     "schvaleny": 24000.0,
+     "rozpocet": 6000.0,
+     "skutecnost": 927.85,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 2000.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 11000.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5154",
+       "text": "Elektrická energie",
+       "schvaleny": 6000.0,
+       "rozpocet": 6000.0,
+       "skutecnost": 927.85
+      },
+      {
+       "kod": "5175",
+       "text": "Pohoštění",
+       "schvaleny": 5000.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3399",
+     "nazev": "Ostatní záležitosti kultury, církví a sdělovacích prostředků",
+     "schvaleny": 120000.0,
+     "rozpocet": 9000.0,
+     "skutecnost": 1585.0,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 6000.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 9000.0,
+       "rozpocet": 9000.0,
+       "skutecnost": 1585.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 80000.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5175",
+       "text": "Pohoštění",
+       "schvaleny": 25000.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3421",
+     "nazev": "Využití volného času dětí a mládeže",
+     "schvaleny": 7000.0,
+     "rozpocet": 0.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 1000.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 3000.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5175",
+       "text": "Pohoštění",
+       "schvaleny": 3000.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3631",
+     "nazev": "Veřejné osvětlení",
+     "schvaleny": 170000.0,
+     "rozpocet": 170000.0,
+     "skutecnost": 128990.14,
+     "polozky": [
+      {
+       "kod": "5154",
+       "text": "Elektrická energie",
+       "schvaleny": 150000.0,
+       "rozpocet": 150000.0,
+       "skutecnost": 125162.0
+      },
+      {
+       "kod": "5171",
+       "text": "Opravy a udržování",
+       "schvaleny": 20000.0,
+       "rozpocet": 20000.0,
+       "skutecnost": 3828.14
+      }
+     ]
+    },
+    {
+     "paragraf": "3639",
+     "nazev": "Komunální služby a územní rozvoj jinde nezařazené",
+     "schvaleny": 40500.0,
+     "rozpocet": 19000.0,
+     "skutecnost": 2967.1,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 5000.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 10000.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 5000.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5154",
+       "text": "Elektrická energie",
+       "schvaleny": 4000.0,
+       "rozpocet": 4000.0,
+       "skutecnost": 2967.1
+      },
+      {
+       "kod": "5156",
+       "text": "Pohonné hmoty a maziva",
+       "schvaleny": 1500.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 15000.0,
+       "rozpocet": 15000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3721",
+     "nazev": "Sběr a svoz nebezpečných odpadů",
+     "schvaleny": 20000.0,
+     "rozpocet": 50000.0,
+     "skutecnost": 12284.0,
+     "polozky": [
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 20000.0,
+       "rozpocet": 50000.0,
+       "skutecnost": 12284.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3722",
+     "nazev": "Sběr a svoz komunálních odpadů",
+     "schvaleny": 130000.0,
+     "rozpocet": 150000.0,
+     "skutecnost": 106400.33,
+     "polozky": [
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 130000.0,
+       "rozpocet": 150000.0,
+       "skutecnost": 106400.33
+      }
+     ]
+    },
+    {
+     "paragraf": "3723",
+     "nazev": "Sběr a svoz ostatních odpadů jiných než nebezpečných a komunálních",
+     "schvaleny": 170000.0,
+     "rozpocet": 270000.0,
+     "skutecnost": 204640.22,
+     "polozky": [
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 30000.0,
+       "rozpocet": 30000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 140000.0,
+       "rozpocet": 240000.0,
+       "skutecnost": 204640.22
+      }
+     ]
+    },
+    {
+     "paragraf": "3745",
+     "nazev": "Péče o vzhled obcí a veřejnou zeleň",
+     "schvaleny": 908183.0,
+     "rozpocet": 711829.7,
+     "skutecnost": 632780.78,
+     "polozky": [
+      {
+       "kod": "5011",
+       "text": "Platy zaměstnanců v pracovním poměru vyjma zaměstnanců na služebních místech",
+       "schvaleny": 0.0,
+       "rozpocet": 2678.0,
+       "skutecnost": 2678.0
+      },
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 100000.0,
+       "rozpocet": 100000.0,
+       "skutecnost": 53962.0
+      },
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 25000.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 20000.0,
+       "rozpocet": 271291.15,
+       "skutecnost": 271291.15
+      },
+      {
+       "kod": "5156",
+       "text": "Pohonné hmoty a maziva",
+       "schvaleny": 25000.0,
+       "rozpocet": 23192.0,
+       "skutecnost": 15110.0
+      },
+      {
+       "kod": "5166",
+       "text": "Konzultační, poradenské a právní služby",
+       "schvaleny": 0.0,
+       "rozpocet": 50000.0,
+       "skutecnost": 40000.0
+      },
+      {
+       "kod": "5167",
+       "text": "Služby školení a vzdělávání",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 195183.0,
+       "rozpocet": 256668.55,
+       "skutecnost": 244739.63
+      },
+      {
+       "kod": "5171",
+       "text": "Opravy a udržování",
+       "schvaleny": 40000.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "6123",
+       "text": "Dopravní prostředky",
+       "schvaleny": 500000.0,
+       "rozpocet": 0.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "6329",
+       "text": "Ostatní investiční transfery neziskovým a podobným osobám",
+       "schvaleny": 0.0,
+       "rozpocet": 5000.0,
+       "skutecnost": 5000.0
+      }
+     ]
+    },
+    {
+     "paragraf": "5213",
+     "nazev": "Krizová opatření",
+     "schvaleny": 5000.0,
+     "rozpocet": 5000.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5903",
+       "text": "Rezerva na krizová opatření",
+       "schvaleny": 5000.0,
+       "rozpocet": 5000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "5512",
+     "nazev": "Požární ochrana - dobrovolná část",
+     "schvaleny": 15000.0,
+     "rozpocet": 15000.0,
+     "skutecnost": 15000.0,
+     "polozky": [
+      {
+       "kod": "5321",
+       "text": "Neinvestiční transfery obcím",
+       "schvaleny": 15000.0,
+       "rozpocet": 15000.0,
+       "skutecnost": 15000.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6112",
+     "nazev": "Zastupitelstva obcí",
+     "schvaleny": 174500.0,
+     "rozpocet": 339000.0,
+     "skutecnost": 297325.0,
+     "polozky": [
+      {
+       "kod": "5023",
+       "text": "Odměny členů zastupitelstev obcí a krajů",
+       "schvaleny": 160000.0,
+       "rozpocet": 310000.0,
+       "skutecnost": 274585.0
+      },
+      {
+       "kod": "5032",
+       "text": "Povinné pojistné na veřejné zdravotní pojištění",
+       "schvaleny": 14500.0,
+       "rozpocet": 29000.0,
+       "skutecnost": 22740.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6115",
+     "nazev": "Volby do zastupitelstev územních samosprávných celků",
+     "schvaleny": 15000.0,
+     "rozpocet": 15000.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5023",
+       "text": "Odměny členů zastupitelstev obcí a krajů",
+       "schvaleny": 12000.0,
+       "rozpocet": 12000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 2000.0,
+       "rozpocet": 2000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5175",
+       "text": "Pohoštění",
+       "schvaleny": 1000.0,
+       "rozpocet": 1000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6118",
+     "nazev": "Volba prezidenta republiky",
+     "schvaleny": 0.0,
+     "rozpocet": 30680.0,
+     "skutecnost": 30680.0,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 0.0,
+       "rozpocet": 24664.0,
+       "skutecnost": 24664.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 0.0,
+       "rozpocet": 2785.0,
+       "skutecnost": 2785.0
+      },
+      {
+       "kod": "5175",
+       "text": "Pohoštění",
+       "schvaleny": 0.0,
+       "rozpocet": 3231.0,
+       "skutecnost": 3231.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6171",
+     "nazev": "Činnost místní správy",
+     "schvaleny": 568284.0,
+     "rozpocet": 707060.95,
+     "skutecnost": 440579.19,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 20000.0,
+       "rozpocet": 60000.0,
+       "skutecnost": 53220.0
+      },
+      {
+       "kod": "5038",
+       "text": "Pojistné na zákonné pojištění odpovědnosti zaměstnavatele za škodu při pracovním úrazu nebo nemoci z povolání",
+       "schvaleny": 400.0,
+       "rozpocet": 800.0,
+       "skutecnost": 400.0
+      },
+      {
+       "kod": "5136",
+       "text": "Knihy a obdobné listinné informační prostředky",
+       "schvaleny": 2000.0,
+       "rozpocet": 2000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 113799.0,
+       "rozpocet": 113799.0,
+       "skutecnost": 25847.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 20000.0,
+       "rozpocet": 44311.3,
+       "skutecnost": 44311.3
+      },
+      {
+       "kod": "5151",
+       "text": "Studená voda včetně stočného a úplaty za odvod dešťových vod",
+       "schvaleny": 2000.0,
+       "rozpocet": 2000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5153",
+       "text": "Plyn",
+       "schvaleny": 43200.0,
+       "rozpocet": 62888.0,
+       "skutecnost": 39400.0
+      },
+      {
+       "kod": "5154",
+       "text": "Elektrická energie",
+       "schvaleny": 20000.0,
+       "rozpocet": 24911.7,
+       "skutecnost": 24911.7
+      },
+      {
+       "kod": "5161",
+       "text": "Poštovní služby",
+       "schvaleny": 2000.0,
+       "rozpocet": 4000.0,
+       "skutecnost": 2621.2
+      },
+      {
+       "kod": "5162",
+       "text": "Služby elektronických komunikací",
+       "schvaleny": 35000.0,
+       "rozpocet": 25348.26,
+       "skutecnost": 25348.26
+      },
+      {
+       "kod": "5163",
+       "text": "Služby peněžních ústavů",
+       "schvaleny": 13000.0,
+       "rozpocet": 1017.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5166",
+       "text": "Konzultační, poradenské a právní služby",
+       "schvaleny": 10000.0,
+       "rozpocet": 90000.0,
+       "skutecnost": 90000.0
+      },
+      {
+       "kod": "5167",
+       "text": "Služby školení a vzdělávání",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5168",
+       "text": "Zpracování dat a služby související s informačními a komunikačními technologiemi",
+       "schvaleny": 111385.0,
+       "rozpocet": 111385.0,
+       "skutecnost": 31479.29
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 115000.0,
+       "rozpocet": 95000.0,
+       "skutecnost": 69890.75
+      },
+      {
+       "kod": "5171",
+       "text": "Opravy a udržování",
+       "schvaleny": 10000.0,
+       "rozpocet": 10000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5172",
+       "text": "Podlimitní programové vybavení",
+       "schvaleny": 17000.0,
+       "rozpocet": 17000.0,
+       "skutecnost": 13649.0
+      },
+      {
+       "kod": "5173",
+       "text": "Cestovné",
+       "schvaleny": 1000.0,
+       "rozpocet": 1000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5175",
+       "text": "Pohoštění",
+       "schvaleny": 3000.0,
+       "rozpocet": 16050.69,
+       "skutecnost": 16050.69
+      },
+      {
+       "kod": "5222",
+       "text": "Neinvestiční transfery spolkům",
+       "schvaleny": 3500.0,
+       "rozpocet": 3500.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5361",
+       "text": "Nákup kolků",
+       "schvaleny": 5000.0,
+       "rozpocet": 600.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5362",
+       "text": "Platby daní státnímu rozpočtu",
+       "schvaleny": 15000.0,
+       "rozpocet": 15000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5363",
+       "text": "Úhrady sankcí jiným rozpočtům",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 3000.0
+      },
+      {
+       "kod": "5365",
+       "text": "Platby daní krajům, obcím a státním fondům",
+       "schvaleny": 0.0,
+       "rozpocet": 450.0,
+       "skutecnost": 450.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6310",
+     "nazev": "Obecné příjmy a výdaje z finančních operací",
+     "schvaleny": 3000.0,
+     "rozpocet": 3000.0,
+     "skutecnost": 1366.4,
+     "polozky": [
+      {
+       "kod": "5163",
+       "text": "Služby peněžních ústavů",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 1366.4
+      }
+     ]
+    },
+    {
+     "paragraf": "6330",
+     "nazev": "Převody vlastním fondům v rozpočtech územní úrovně",
+     "schvaleny": 0.0,
+     "rozpocet": 350000.0,
+     "skutecnost": 350000.0,
+     "polozky": [
+      {
+       "kod": "5348",
+       "text": "Převody do vlastní pokladny",
+       "schvaleny": 0.0,
+       "rozpocet": 350000.0,
+       "skutecnost": 350000.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6399",
+     "nazev": "Ostatní finanční operace",
+     "schvaleny": 0.0,
+     "rozpocet": 167077.0,
+     "skutecnost": 167077.0,
+     "polozky": [
+      {
+       "kod": "5362",
+       "text": "Platby daní státnímu rozpočtu",
+       "schvaleny": 0.0,
+       "rozpocet": 3867.0,
+       "skutecnost": 3867.0
+      },
+      {
+       "kod": "5365",
+       "text": "Platby daní krajům, obcím a státním fondům",
+       "schvaleny": 0.0,
+       "rozpocet": 163210.0,
+       "skutecnost": 163210.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6402",
+     "nazev": "Finanční vypořádání",
+     "schvaleny": 0.0,
+     "rozpocet": 9400.0,
+     "skutecnost": 9400.0,
+     "polozky": [
+      {
+       "kod": "5364",
+       "text": "Vratky transferů poskytnutých z veřejných rozpočtů",
+       "schvaleny": 0.0,
+       "rozpocet": 9400.0,
+       "skutecnost": 9400.0
+      }
+     ]
+    }
+   ],
+   "prijmy_celkem": 4374193.41,
+   "vydaje_celkem": 3052028.58,
+   "prijmy_rozpocet": 4374193.41,
+   "vydaje_rozpocet": 3885881.46,
+   "prijmy_schvaleny": 3218049.0,
+   "vydaje_schvaleny": 3748231.0,
+   "ucty": {
+    "pocatek": 2909499.53,
+    "konec": 4231664.36
+   }
+  },
+  "2024": {
+   "k": "31.12.2024",
+   "prijmy": [
+    {
+     "paragraf": "",
+     "nazev": "Bez paragrafu",
+     "schvaleny": 3190239.0,
+     "rozpocet": 3729909.0,
+     "skutecnost": 3608947.76,
+     "polozky": [
+      {
+       "kod": "1111",
+       "text": "Příjem z daně z příjmů fyzických osob placené plátci",
+       "schvaleny": 450000.0,
+       "rozpocet": 542670.0,
+       "skutecnost": 542759.16
+      },
+      {
+       "kod": "1112",
+       "text": "Příjem z daně z příjmů fyzických osob placené poplatníky",
+       "schvaleny": 20000.0,
+       "rozpocet": 40000.0,
+       "skutecnost": 40748.56
+      },
+      {
+       "kod": "1113",
+       "text": "Příjem z daně z příjmů fyzických osob vybírané srážkou podle zvláštní sazby daně",
+       "schvaleny": 70000.0,
+       "rozpocet": 126000.0,
+       "skutecnost": 126770.93
+      },
+      {
+       "kod": "1121",
+       "text": "Příjem z daně z příjmů právnických osob",
+       "schvaleny": 720000.0,
+       "rozpocet": 780000.0,
+       "skutecnost": 784185.28
+      },
+      {
+       "kod": "1122",
+       "text": "Příjem z daně z příjmů právnických osob v případech, kdy poplatníkem je obec, s výjimkou daně vybírané srážkou podle zvláštní sazby daně",
+       "schvaleny": 7410.0,
+       "rozpocet": 7410.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "1211",
+       "text": "Příjem z daně z přidané hodnoty",
+       "schvaleny": 1515000.0,
+       "rozpocet": 1577000.0,
+       "skutecnost": 1577144.7
+      },
+      {
+       "kod": "1334",
+       "text": "Příjem z odvodů za odnětí půdy ze zemědělského půdního fondu podle zákona upravujícího ochranu zemědělského půdního fondu",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 2515.14
+      },
+      {
+       "kod": "1341",
+       "text": "Příjem z poplatku ze psů",
+       "schvaleny": 2760.0,
+       "rozpocet": 2760.0,
+       "skutecnost": 3950.0
+      },
+      {
+       "kod": "1345",
+       "text": "Příjem z poplatku za obecní systém odpadového hospodářství a příjem z poplatku za odkládání komunálního odpadu z nemovité věci",
+       "schvaleny": 93500.0,
+       "rozpocet": 93500.0,
+       "skutecnost": 27350.0
+      },
+      {
+       "kod": "1361",
+       "text": "Příjem ze správních poplatků",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 150.0
+      },
+      {
+       "kod": "1381",
+       "text": "Příjem z daně z hazardních her s výjimkou dílčí daně z technických her za zdaňovací období do roku 2023",
+       "schvaleny": 18000.0,
+       "rozpocet": 16700.0,
+       "skutecnost": 6509.2
+      },
+      {
+       "kod": "1386",
+       "text": "Příjem z daně z hazardních her s výjimkou technických her neprovozovaných prostřednictvím internetu",
+       "schvaleny": 0.0,
+       "rozpocet": 18000.0,
+       "skutecnost": 18424.65
+      },
+      {
+       "kod": "1387",
+       "text": "Příjem z daně z technických her neprovozovaných prostřednictvím internetu",
+       "schvaleny": 0.0,
+       "rozpocet": 9000.0,
+       "skutecnost": 9028.62
+      },
+      {
+       "kod": "1511",
+       "text": "Příjem z daně z nemovitých věcí",
+       "schvaleny": 175000.0,
+       "rozpocet": 368000.0,
+       "skutecnost": 368086.52
+      },
+      {
+       "kod": "4111",
+       "text": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "schvaleny": 48069.0,
+       "rozpocet": 77069.0,
+       "skutecnost": 29525.0
+      },
+      {
+       "kod": "4112",
+       "text": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "schvaleny": 70500.0,
+       "rozpocet": 71800.0,
+       "skutecnost": 71800.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2341",
+     "nazev": "Vodní díla v zemědělské krajině",
+     "schvaleny": 500.0,
+     "rozpocet": 500.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "2131",
+       "text": "Příjem z pronájmu nebo pachtu pozemků",
+       "schvaleny": 500.0,
+       "rozpocet": 500.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3639",
+     "nazev": "Komunální služby a územní rozvoj jinde nezařazené",
+     "schvaleny": 6000.0,
+     "rozpocet": 6000.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "2329",
+       "text": "Ostatní nedaňové příjmy jinde nezařazené",
+       "schvaleny": 6000.0,
+       "rozpocet": 6000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3726",
+     "nazev": "Využívání a zneškodňování ostatních odpadů",
+     "schvaleny": 80000.0,
+     "rozpocet": 80000.0,
+     "skutecnost": 91573.5,
+     "polozky": [
+      {
+       "kod": "2324",
+       "text": "Přijaté neinvestiční příspěvky a náhrady",
+       "schvaleny": 80000.0,
+       "rozpocet": 80000.0,
+       "skutecnost": 91573.5
+      }
+     ]
+    },
+    {
+     "paragraf": "3745",
+     "nazev": "Péče o vzhled obcí a veřejnou zeleň",
+     "schvaleny": 50000.0,
+     "rozpocet": 50000.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "2321",
+       "text": "Přijaté peněžité neinvestiční dary",
+       "schvaleny": 50000.0,
+       "rozpocet": 50000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6171",
+     "nazev": "Činnost místní správy",
+     "schvaleny": 117910.0,
+     "rozpocet": 184910.0,
+     "skutecnost": 167660.97,
+     "polozky": [
+      {
+       "kod": "2111",
+       "text": "Příjem z poskytování služeb, výrobků, prací, výkonů a práv",
+       "schvaleny": 0.0,
+       "rozpocet": 67000.0,
+       "skutecnost": 67637.41
+      },
+      {
+       "kod": "2131",
+       "text": "Příjem z pronájmu nebo pachtu pozemků",
+       "schvaleny": 41000.0,
+       "rozpocet": 41000.0,
+       "skutecnost": 39453.0
+      },
+      {
+       "kod": "2132",
+       "text": "Příjem z pronájmu nebo pachtu ostatních nemovitých věcí a jejich částí",
+       "schvaleny": 28910.0,
+       "rozpocet": 28910.0,
+       "skutecnost": 60570.56
+      },
+      {
+       "kod": "2321",
+       "text": "Přijaté peněžité neinvestiční dary",
+       "schvaleny": 48000.0,
+       "rozpocet": 48000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6330",
+     "nazev": "Převody vlastním fondům v rozpočtech územní úrovně",
+     "schvaleny": 0.0,
+     "rozpocet": 0.0,
+     "skutecnost": 180000.0,
+     "polozky": [
+      {
+       "kod": "4134",
+       "text": "Převody z rozpočtových účtů",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 180000.0
+      }
+     ]
+    }
+   ],
+   "vydaje": [
+    {
+     "paragraf": "2212",
+     "nazev": "Silnice",
+     "schvaleny": 5000.0,
+     "rozpocet": 5000.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 5000.0,
+       "rozpocet": 5000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2219",
+     "nazev": "Ostatní záležitosti pozemních komunikací",
+     "schvaleny": 418631.0,
+     "rozpocet": 418631.0,
+     "skutecnost": 21936.8,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 15000.0,
+       "rozpocet": 15000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 10000.0,
+       "rozpocet": 10000.0,
+       "skutecnost": 6110.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 5000.0,
+       "rozpocet": 5000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5156",
+       "text": "Pohonné hmoty a maziva",
+       "schvaleny": 4000.0,
+       "rozpocet": 4000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 892.0,
+       "rozpocet": 892.0,
+       "skutecnost": 15826.8
+      },
+      {
+       "kod": "5171",
+       "text": "Opravy a udržování",
+       "schvaleny": 118739.0,
+       "rozpocet": 118739.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "6121",
+       "text": "Stavby",
+       "schvaleny": 265000.0,
+       "rozpocet": 265000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2221",
+     "nazev": "Provoz veřejné silniční dopravy",
+     "schvaleny": 0.0,
+     "rozpocet": 40000.0,
+     "skutecnost": 39026.0,
+     "polozky": [
+      {
+       "kod": "5323",
+       "text": "Neinvestiční transfery krajům",
+       "schvaleny": 0.0,
+       "rozpocet": 40000.0,
+       "skutecnost": 39026.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2310",
+     "nazev": "Pitná voda",
+     "schvaleny": 33025.0,
+     "rozpocet": 33025.0,
+     "skutecnost": 8366.62,
+     "polozky": [
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 15000.0,
+       "rozpocet": 15000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 3025.0,
+       "rozpocet": 3025.0,
+       "skutecnost": 8366.62
+      },
+      {
+       "kod": "5171",
+       "text": "Opravy a udržování",
+       "schvaleny": 15000.0,
+       "rozpocet": 15000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2321",
+     "nazev": "Odvádění a čistění odpadních vod a nakládání s kaly",
+     "schvaleny": 15000.0,
+     "rozpocet": 57670.0,
+     "skutecnost": 53905.5,
+     "polozky": [
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 15000.0,
+       "rozpocet": 15000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "6121",
+       "text": "Stavby",
+       "schvaleny": 0.0,
+       "rozpocet": 42670.0,
+       "skutecnost": 53905.5
+      }
+     ]
+    },
+    {
+     "paragraf": "2339",
+     "nazev": "Záležitosti vodních toků a vodohospodářských děl jinde nezařazené",
+     "schvaleny": 2000.0,
+     "rozpocet": 2000.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 2000.0,
+       "rozpocet": 2000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2341",
+     "nazev": "Vodní díla v zemědělské krajině",
+     "schvaleny": 5000.0,
+     "rozpocet": 5000.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 5000.0,
+       "rozpocet": 5000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3326",
+     "nazev": "Pořízení, zachování a obnova hodnot místního kulturního, národního a historického povědomí",
+     "schvaleny": 24000.0,
+     "rozpocet": 24000.0,
+     "skutecnost": 3069.36,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 2000.0,
+       "rozpocet": 2000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 11000.0,
+       "rozpocet": 11000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5154",
+       "text": "Elektrická energie",
+       "schvaleny": 6000.0,
+       "rozpocet": 6000.0,
+       "skutecnost": 3069.36
+      },
+      {
+       "kod": "5175",
+       "text": "Pohoštění",
+       "schvaleny": 5000.0,
+       "rozpocet": 5000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3399",
+     "nazev": "Ostatní záležitosti kultury, církví a sdělovacích prostředků",
+     "schvaleny": 120000.0,
+     "rozpocet": 120000.0,
+     "skutecnost": 74561.0,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 6000.0,
+       "rozpocet": 6000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 15407.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 9000.0,
+       "rozpocet": 9000.0,
+       "skutecnost": 21665.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 80000.0,
+       "rozpocet": 80000.0,
+       "skutecnost": 37489.0
+      },
+      {
+       "kod": "5175",
+       "text": "Pohoštění",
+       "schvaleny": 25000.0,
+       "rozpocet": 25000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3421",
+     "nazev": "Využití volného času dětí a mládeže",
+     "schvaleny": 157000.0,
+     "rozpocet": 157000.0,
+     "skutecnost": 82497.0,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 1000.0,
+       "rozpocet": 1000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 82497.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5175",
+       "text": "Pohoštění",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "6121",
+       "text": "Stavby",
+       "schvaleny": 150000.0,
+       "rozpocet": 150000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3631",
+     "nazev": "Veřejné osvětlení",
+     "schvaleny": 170000.0,
+     "rozpocet": 170000.0,
+     "skutecnost": 153465.16,
+     "polozky": [
+      {
+       "kod": "5154",
+       "text": "Elektrická energie",
+       "schvaleny": 150000.0,
+       "rozpocet": 98612.99,
+       "skutecnost": 82078.15
+      },
+      {
+       "kod": "5171",
+       "text": "Opravy a udržování",
+       "schvaleny": 20000.0,
+       "rozpocet": 71387.01,
+       "skutecnost": 71387.01
+      }
+     ]
+    },
+    {
+     "paragraf": "3639",
+     "nazev": "Komunální služby a územní rozvoj jinde nezařazené",
+     "schvaleny": 40500.0,
+     "rozpocet": 40500.0,
+     "skutecnost": 4434.21,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 5000.0,
+       "rozpocet": 5000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 10000.0,
+       "rozpocet": 10000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 5000.0,
+       "rozpocet": 5000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5154",
+       "text": "Elektrická energie",
+       "schvaleny": 4000.0,
+       "rozpocet": 4000.0,
+       "skutecnost": 4434.21
+      },
+      {
+       "kod": "5156",
+       "text": "Pohonné hmoty a maziva",
+       "schvaleny": 1500.0,
+       "rozpocet": 1500.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 15000.0,
+       "rozpocet": 15000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3721",
+     "nazev": "Sběr a svoz nebezpečných odpadů",
+     "schvaleny": 50000.0,
+     "rozpocet": 50000.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 50000.0,
+       "rozpocet": 50000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3722",
+     "nazev": "Sběr a svoz komunálních odpadů",
+     "schvaleny": 150000.0,
+     "rozpocet": 230000.0,
+     "skutecnost": 227258.14,
+     "polozky": [
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 150000.0,
+       "rozpocet": 230000.0,
+       "skutecnost": 227258.14
+      }
+     ]
+    },
+    {
+     "paragraf": "3723",
+     "nazev": "Sběr a svoz ostatních odpadů jiných než nebezpečných a komunálních",
+     "schvaleny": 470000.0,
+     "rozpocet": 470000.0,
+     "skutecnost": 154918.39,
+     "polozky": [
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 30000.0,
+       "rozpocet": 30000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 240000.0,
+       "rozpocet": 240000.0,
+       "skutecnost": 154918.39
+      },
+      {
+       "kod": "6121",
+       "text": "Stavby",
+       "schvaleny": 200000.0,
+       "rozpocet": 200000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3745",
+     "nazev": "Péče o vzhled obcí a veřejnou zeleň",
+     "schvaleny": 844286.61,
+     "rozpocet": 1194286.61,
+     "skutecnost": 1177842.75,
+     "polozky": [
+      {
+       "kod": "5011",
+       "text": "Platy zaměstnanců v pracovním poměru vyjma zaměstnanců na služebních místech",
+       "schvaleny": 2678.0,
+       "rozpocet": 2678.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 100000.0,
+       "rozpocet": 71816.0,
+       "skutecnost": 92977.0
+      },
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 0.0,
+       "rozpocet": 28184.0,
+       "skutecnost": 31683.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 238139.15,
+       "rozpocet": 438139.15,
+       "skutecnost": 342200.81
+      },
+      {
+       "kod": "5156",
+       "text": "Pohonné hmoty a maziva",
+       "schvaleny": 23192.0,
+       "rozpocet": 23192.0,
+       "skutecnost": 11548.05
+      },
+      {
+       "kod": "5166",
+       "text": "Konzultační, poradenské a právní služby",
+       "schvaleny": 30000.0,
+       "rozpocet": 30000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5167",
+       "text": "Služby školení a vzdělávání",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 256668.55,
+       "rozpocet": 406668.55,
+       "skutecnost": 617121.89
+      },
+      {
+       "kod": "5171",
+       "text": "Opravy a udržování",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 25079.0
+      },
+      {
+       "kod": "6122",
+       "text": "Stroje, přístroje a zařízení",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 57233.0
+      },
+      {
+       "kod": "6123",
+       "text": "Dopravní prostředky",
+       "schvaleny": 190608.91,
+       "rozpocet": 190608.91,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "5213",
+     "nazev": "Krizová opatření",
+     "schvaleny": 5000.0,
+     "rozpocet": 5000.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5903",
+       "text": "Rezerva na krizová opatření",
+       "schvaleny": 5000.0,
+       "rozpocet": 5000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "5512",
+     "nazev": "Požární ochrana - dobrovolná část",
+     "schvaleny": 15000.0,
+     "rozpocet": 60000.0,
+     "skutecnost": 57732.36,
+     "polozky": [
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 0.0,
+       "rozpocet": 45000.0,
+       "skutecnost": 42732.36
+      },
+      {
+       "kod": "5321",
+       "text": "Neinvestiční transfery obcím",
+       "schvaleny": 15000.0,
+       "rozpocet": 15000.0,
+       "skutecnost": 15000.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6112",
+     "nazev": "Zastupitelstva obcí",
+     "schvaleny": 400000.0,
+     "rozpocet": 400000.0,
+     "skutecnost": 333195.0,
+     "polozky": [
+      {
+       "kod": "5023",
+       "text": "Odměny členů zastupitelstev obcí a krajů",
+       "schvaleny": 371000.0,
+       "rozpocet": 371000.0,
+       "skutecnost": 309374.0
+      },
+      {
+       "kod": "5032",
+       "text": "Povinné pojistné na veřejné zdravotní pojištění",
+       "schvaleny": 29000.0,
+       "rozpocet": 29000.0,
+       "skutecnost": 23821.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6115",
+     "nazev": "Volby do zastupitelstev územních samosprávných celků",
+     "schvaleny": 40000.0,
+     "rozpocet": 40000.0,
+     "skutecnost": 20048.0,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 20048.0
+      },
+      {
+       "kod": "5023",
+       "text": "Odměny členů zastupitelstev obcí a krajů",
+       "schvaleny": 30000.0,
+       "rozpocet": 30000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 7000.0,
+       "rozpocet": 7000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5175",
+       "text": "Pohoštění",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6117",
+     "nazev": "Volby do Evropského parlamentu",
+     "schvaleny": 40000.0,
+     "rozpocet": 40000.0,
+     "skutecnost": 9477.0,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 30000.0,
+       "rozpocet": 30000.0,
+       "skutecnost": 9477.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 7000.0,
+       "rozpocet": 7000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5175",
+       "text": "Pohoštění",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6171",
+     "nazev": "Činnost místní správy",
+     "schvaleny": 661134.0,
+     "rozpocet": 937134.0,
+     "skutecnost": 905842.71,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 60000.0,
+       "rozpocet": 60000.0,
+       "skutecnost": 55447.0
+      },
+      {
+       "kod": "5038",
+       "text": "Pojistné na zákonné pojištění odpovědnosti zaměstnavatele za škodu při pracovním úrazu nebo nemoci z povolání",
+       "schvaleny": 800.0,
+       "rozpocet": 800.0,
+       "skutecnost": 400.0
+      },
+      {
+       "kod": "5136",
+       "text": "Knihy a obdobné listinné informační prostředky",
+       "schvaleny": 2000.0,
+       "rozpocet": 2000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 113799.0,
+       "rozpocet": 193799.0,
+       "skutecnost": 152813.55
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 30000.0,
+       "rozpocet": 30000.0,
+       "skutecnost": 98473.34
+      },
+      {
+       "kod": "5151",
+       "text": "Studená voda včetně stočného a úplaty za odvod dešťových vod",
+       "schvaleny": 2000.0,
+       "rozpocet": 2000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5153",
+       "text": "Plyn",
+       "schvaleny": 62888.0,
+       "rozpocet": 62888.0,
+       "skutecnost": 19200.0
+      },
+      {
+       "kod": "5154",
+       "text": "Elektrická energie",
+       "schvaleny": 21512.0,
+       "rozpocet": 11384.0,
+       "skutecnost": 7450.03
+      },
+      {
+       "kod": "5161",
+       "text": "Poštovní služby",
+       "schvaleny": 4000.0,
+       "rozpocet": 4000.0,
+       "skutecnost": 19707.7
+      },
+      {
+       "kod": "5162",
+       "text": "Služby elektronických komunikací",
+       "schvaleny": 23800.0,
+       "rozpocet": 23800.0,
+       "skutecnost": 30879.98
+      },
+      {
+       "kod": "5163",
+       "text": "Služby peněžních ústavů",
+       "schvaleny": 1017.0,
+       "rozpocet": 41145.0,
+       "skutecnost": 47192.12
+      },
+      {
+       "kod": "5166",
+       "text": "Konzultační, poradenské a právní služby",
+       "schvaleny": 70000.0,
+       "rozpocet": 170000.0,
+       "skutecnost": 218412.5
+      },
+      {
+       "kod": "5167",
+       "text": "Služby školení a vzdělávání",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5168",
+       "text": "Zpracování dat a služby související s informačními a komunikačními technologiemi",
+       "schvaleny": 111385.0,
+       "rozpocet": 111385.0,
+       "skutecnost": 64314.02
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 95000.0,
+       "rozpocet": 135000.0,
+       "skutecnost": 131962.17
+      },
+      {
+       "kod": "5171",
+       "text": "Opravy a udržování",
+       "schvaleny": 10000.0,
+       "rozpocet": 10000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5172",
+       "text": "Podlimitní programové vybavení",
+       "schvaleny": 17000.0,
+       "rozpocet": 16000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5173",
+       "text": "Cestovné",
+       "schvaleny": 1000.0,
+       "rozpocet": 1000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5175",
+       "text": "Pohoštění",
+       "schvaleny": 9383.0,
+       "rozpocet": 35383.0,
+       "skutecnost": 34908.1
+      },
+      {
+       "kod": "5222",
+       "text": "Neinvestiční transfery spolkům",
+       "schvaleny": 3500.0,
+       "rozpocet": 3500.0,
+       "skutecnost": 5639.3
+      },
+      {
+       "kod": "5321",
+       "text": "Neinvestiční transfery obcím",
+       "schvaleny": 0.0,
+       "rozpocet": 1000.0,
+       "skutecnost": 1000.0
+      },
+      {
+       "kod": "5361",
+       "text": "Nákup kolků",
+       "schvaleny": 600.0,
+       "rozpocet": 600.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5362",
+       "text": "Platby daní státnímu rozpočtu",
+       "schvaleny": 15000.0,
+       "rozpocet": 15000.0,
+       "skutecnost": 13919.0
+      },
+      {
+       "kod": "5363",
+       "text": "Úhrady sankcí jiným rozpočtům",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5365",
+       "text": "Platby daní krajům, obcím a státním fondům",
+       "schvaleny": 450.0,
+       "rozpocet": 450.0,
+       "skutecnost": 4123.9
+      }
+     ]
+    },
+    {
+     "paragraf": "6310",
+     "nazev": "Obecné příjmy a výdaje z finančních operací",
+     "schvaleny": 3000.0,
+     "rozpocet": 3000.0,
+     "skutecnost": 1370.2,
+     "polozky": [
+      {
+       "kod": "5163",
+       "text": "Služby peněžních ústavů",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 1370.2
+      }
+     ]
+    },
+    {
+     "paragraf": "6330",
+     "nazev": "Převody vlastním fondům v rozpočtech územní úrovně",
+     "schvaleny": 0.0,
+     "rozpocet": 0.0,
+     "skutecnost": 180000.0,
+     "polozky": [
+      {
+       "kod": "5348",
+       "text": "Převody do vlastní pokladny",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 180000.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6399",
+     "nazev": "Ostatní finanční operace",
+     "schvaleny": 3867.0,
+     "rozpocet": 3867.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5362",
+       "text": "Platby daní státnímu rozpočtu",
+       "schvaleny": 3867.0,
+       "rozpocet": 3867.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6402",
+     "nazev": "Finanční vypořádání",
+     "schvaleny": 9400.0,
+     "rozpocet": 9400.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5364",
+       "text": "Vratky transferů poskytnutých z veřejných rozpočtů",
+       "schvaleny": 9400.0,
+       "rozpocet": 9400.0,
+       "skutecnost": 0.0
+      }
+     ]
+    }
+   ],
+   "prijmy_celkem": 4048182.23,
+   "vydaje_celkem": 3508946.2,
+   "prijmy_rozpocet": 4051319.0,
+   "vydaje_rozpocet": 4515513.61,
+   "prijmy_schvaleny": 3444649.0,
+   "vydaje_schvaleny": 3681843.61,
+   "ucty": {
+    "pocatek": 4231664.36,
+    "konec": 4770900.39
+   }
+  },
+  "2025": {
+   "k": "31.12.2025",
+   "prijmy": [
+    {
+     "paragraf": "",
+     "nazev": "Bez paragrafu",
+     "schvaleny": 3677829.0,
+     "rozpocet": 3677829.0,
+     "skutecnost": 4034136.04,
+     "polozky": [
+      {
+       "kod": "1111",
+       "text": "Příjem z daně z příjmů fyzických osob placené plátci",
+       "schvaleny": 550000.0,
+       "rozpocet": 550000.0,
+       "skutecnost": 580779.32
+      },
+      {
+       "kod": "1112",
+       "text": "Příjem z daně z příjmů fyzických osob placené poplatníky",
+       "schvaleny": 40000.0,
+       "rozpocet": 40000.0,
+       "skutecnost": 56141.06
+      },
+      {
+       "kod": "1113",
+       "text": "Příjem z daně z příjmů fyzických osob vybírané srážkou podle zvláštní sazby daně",
+       "schvaleny": 125000.0,
+       "rozpocet": 125000.0,
+       "skutecnost": 113845.14
+      },
+      {
+       "kod": "1121",
+       "text": "Příjem z daně z příjmů právnických osob",
+       "schvaleny": 800000.0,
+       "rozpocet": 800000.0,
+       "skutecnost": 861279.21
+      },
+      {
+       "kod": "1211",
+       "text": "Příjem z daně z přidané hodnoty",
+       "schvaleny": 1570000.0,
+       "rozpocet": 1570000.0,
+       "skutecnost": 1608709.0
+      },
+      {
+       "kod": "1341",
+       "text": "Příjem z poplatku ze psů",
+       "schvaleny": 2760.0,
+       "rozpocet": 2760.0,
+       "skutecnost": 4550.0
+      },
+      {
+       "kod": "1345",
+       "text": "Příjem z poplatku za obecní systém odpadového hospodářství a příjem z poplatku za odkládání komunálního odpadu z nemovité věci",
+       "schvaleny": 93500.0,
+       "rozpocet": 93500.0,
+       "skutecnost": 72925.0
+      },
+      {
+       "kod": "1361",
+       "text": "Příjem ze správních poplatků",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 250.0
+      },
+      {
+       "kod": "1381",
+       "text": "Příjem z daně z hazardních her s výjimkou dílčí daně z technických her za zdaňovací období do roku 2023",
+       "schvaleny": 18000.0,
+       "rozpocet": 18000.0,
+       "skutecnost": 250.39
+      },
+      {
+       "kod": "1386",
+       "text": "Příjem z daně z hazardních her s výjimkou technických her neprovozovaných prostřednictvím internetu",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 31378.56
+      },
+      {
+       "kod": "1387",
+       "text": "Příjem z daně z technických her neprovozovaných prostřednictvím internetu",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 12298.36
+      },
+      {
+       "kod": "1511",
+       "text": "Příjem z daně z nemovitých věcí",
+       "schvaleny": 360000.0,
+       "rozpocet": 358700.0,
+       "skutecnost": 387430.0
+      },
+      {
+       "kod": "4111",
+       "text": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "schvaleny": 48069.0,
+       "rozpocet": 48069.0,
+       "skutecnost": 32500.0
+      },
+      {
+       "kod": "4112",
+       "text": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "schvaleny": 70500.0,
+       "rozpocet": 71800.0,
+       "skutecnost": 71800.0
+      },
+      {
+       "kod": "4122",
+       "text": "Neinvestiční přijaté transfery od krajů",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 200000.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2341",
+     "nazev": "Vodní díla v zemědělské krajině",
+     "schvaleny": 500.0,
+     "rozpocet": 500.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "2131",
+       "text": "Příjem z pronájmu nebo pachtu pozemků",
+       "schvaleny": 500.0,
+       "rozpocet": 500.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3639",
+     "nazev": "Komunální služby a územní rozvoj jinde nezařazené",
+     "schvaleny": 6000.0,
+     "rozpocet": 6000.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "2329",
+       "text": "Ostatní nedaňové příjmy jinde nezařazené",
+       "schvaleny": 6000.0,
+       "rozpocet": 6000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3726",
+     "nazev": "Využívání a zneškodňování ostatních odpadů",
+     "schvaleny": 80000.0,
+     "rozpocet": 80000.0,
+     "skutecnost": 67428.5,
+     "polozky": [
+      {
+       "kod": "2324",
+       "text": "Přijaté neinvestiční příspěvky a náhrady",
+       "schvaleny": 80000.0,
+       "rozpocet": 80000.0,
+       "skutecnost": 67428.5
+      }
+     ]
+    },
+    {
+     "paragraf": "3745",
+     "nazev": "Péče o vzhled obcí a veřejnou zeleň",
+     "schvaleny": 50000.0,
+     "rozpocet": 50000.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "2321",
+       "text": "Přijaté peněžité neinvestiční dary",
+       "schvaleny": 50000.0,
+       "rozpocet": 50000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6171",
+     "nazev": "Činnost místní správy",
+     "schvaleny": 117910.0,
+     "rozpocet": 117910.0,
+     "skutecnost": 2609.68,
+     "polozky": [
+      {
+       "kod": "2111",
+       "text": "Příjem z poskytování služeb, výrobků, prací, výkonů a práv",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 2609.68
+      },
+      {
+       "kod": "2131",
+       "text": "Příjem z pronájmu nebo pachtu pozemků",
+       "schvaleny": 41000.0,
+       "rozpocet": 41000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "2132",
+       "text": "Příjem z pronájmu nebo pachtu ostatních nemovitých věcí a jejich částí",
+       "schvaleny": 28910.0,
+       "rozpocet": 28910.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "2321",
+       "text": "Přijaté peněžité neinvestiční dary",
+       "schvaleny": 48000.0,
+       "rozpocet": 48000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6330",
+     "nazev": "Převody vlastním fondům v rozpočtech územní úrovně",
+     "schvaleny": 0.0,
+     "rozpocet": 0.0,
+     "skutecnost": 300000.0,
+     "polozky": [
+      {
+       "kod": "4134",
+       "text": "Převody z rozpočtových účtů",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 300000.0
+      }
+     ]
+    }
+   ],
+   "vydaje": [
+    {
+     "paragraf": "2212",
+     "nazev": "Silnice",
+     "schvaleny": 5000.0,
+     "rozpocet": 5000.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 5000.0,
+       "rozpocet": 5000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2219",
+     "nazev": "Ostatní záležitosti pozemních komunikací",
+     "schvaleny": 418631.0,
+     "rozpocet": 418631.0,
+     "skutecnost": 117592.72,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 15000.0,
+       "rozpocet": 15000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 10000.0,
+       "rozpocet": 10000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 5000.0,
+       "rozpocet": 5000.0,
+       "skutecnost": 44417.72
+      },
+      {
+       "kod": "5156",
+       "text": "Pohonné hmoty a maziva",
+       "schvaleny": 4000.0,
+       "rozpocet": 4000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 892.0,
+       "rozpocet": 892.0,
+       "skutecnost": 66375.0
+      },
+      {
+       "kod": "5171",
+       "text": "Opravy a udržování",
+       "schvaleny": 118739.0,
+       "rozpocet": 118739.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "6121",
+       "text": "Stavby",
+       "schvaleny": 265000.0,
+       "rozpocet": 265000.0,
+       "skutecnost": 6800.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2221",
+     "nazev": "Provoz veřejné silniční dopravy",
+     "schvaleny": 40000.0,
+     "rozpocet": 40000.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5323",
+       "text": "Neinvestiční transfery krajům",
+       "schvaleny": 40000.0,
+       "rozpocet": 40000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2310",
+     "nazev": "Pitná voda",
+     "schvaleny": 33025.0,
+     "rozpocet": 33025.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 15000.0,
+       "rozpocet": 15000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 3025.0,
+       "rozpocet": 3025.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5171",
+       "text": "Opravy a udržování",
+       "schvaleny": 15000.0,
+       "rozpocet": 15000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2321",
+     "nazev": "Odvádění a čistění odpadních vod a nakládání s kaly",
+     "schvaleny": 47670.0,
+     "rozpocet": 47670.0,
+     "skutecnost": 13451.5,
+     "polozky": [
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 15000.0,
+       "rozpocet": 15000.0,
+       "skutecnost": 2017.0
+      },
+      {
+       "kod": "6121",
+       "text": "Stavby",
+       "schvaleny": 32670.0,
+       "rozpocet": 32670.0,
+       "skutecnost": 11434.5
+      }
+     ]
+    },
+    {
+     "paragraf": "2339",
+     "nazev": "Záležitosti vodních toků a vodohospodářských děl jinde nezařazené",
+     "schvaleny": 2000.0,
+     "rozpocet": 2000.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 2000.0,
+       "rozpocet": 2000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2341",
+     "nazev": "Vodní díla v zemědělské krajině",
+     "schvaleny": 5000.0,
+     "rozpocet": 5000.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 5000.0,
+       "rozpocet": 5000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3326",
+     "nazev": "Pořízení, zachování a obnova hodnot místního kulturního, národního a historického povědomí",
+     "schvaleny": 24000.0,
+     "rozpocet": 24000.0,
+     "skutecnost": 2375.63,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 2000.0,
+       "rozpocet": 2000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 11000.0,
+       "rozpocet": 11000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5154",
+       "text": "Elektrická energie",
+       "schvaleny": 6000.0,
+       "rozpocet": 6000.0,
+       "skutecnost": 2375.63
+      },
+      {
+       "kod": "5175",
+       "text": "Pohoštění",
+       "schvaleny": 5000.0,
+       "rozpocet": 5000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3399",
+     "nazev": "Ostatní záležitosti kultury, církví a sdělovacích prostředků",
+     "schvaleny": 120000.0,
+     "rozpocet": 120000.0,
+     "skutecnost": 117176.8,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 6000.0,
+       "rozpocet": 6000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 43303.8
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 9000.0,
+       "rozpocet": 9000.0,
+       "skutecnost": 53746.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 80000.0,
+       "rozpocet": 80000.0,
+       "skutecnost": 20127.0
+      },
+      {
+       "kod": "5175",
+       "text": "Pohoštění",
+       "schvaleny": 25000.0,
+       "rozpocet": 25000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3421",
+     "nazev": "Využití volného času dětí a mládeže",
+     "schvaleny": 157000.0,
+     "rozpocet": 157000.0,
+     "skutecnost": 146340.0,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 1000.0,
+       "rozpocet": 1000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 94190.0
+      },
+      {
+       "kod": "5171",
+       "text": "Opravy a udržování",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 52150.0
+      },
+      {
+       "kod": "5175",
+       "text": "Pohoštění",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "6121",
+       "text": "Stavby",
+       "schvaleny": 150000.0,
+       "rozpocet": 150000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3631",
+     "nazev": "Veřejné osvětlení",
+     "schvaleny": 170000.0,
+     "rozpocet": 170000.0,
+     "skutecnost": 156371.17,
+     "polozky": [
+      {
+       "kod": "5154",
+       "text": "Elektrická energie",
+       "schvaleny": 98612.99,
+       "rozpocet": 98612.99,
+       "skutecnost": 90760.99
+      },
+      {
+       "kod": "5171",
+       "text": "Opravy a udržování",
+       "schvaleny": 71387.01,
+       "rozpocet": 71387.01,
+       "skutecnost": 41088.18
+      },
+      {
+       "kod": "5909",
+       "text": "Ostatní neinvestiční výdaje jinde nezařazené",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 24522.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3639",
+     "nazev": "Komunální služby a územní rozvoj jinde nezařazené",
+     "schvaleny": 40500.0,
+     "rozpocet": 40500.0,
+     "skutecnost": 31284.37,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 5000.0,
+       "rozpocet": 5000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 10000.0,
+       "rozpocet": 10000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 5000.0,
+       "rozpocet": 5000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5154",
+       "text": "Elektrická energie",
+       "schvaleny": 4000.0,
+       "rozpocet": 4000.0,
+       "skutecnost": 17462.37
+      },
+      {
+       "kod": "5156",
+       "text": "Pohonné hmoty a maziva",
+       "schvaleny": 1500.0,
+       "rozpocet": 1500.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 15000.0,
+       "rozpocet": 15000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5171",
+       "text": "Opravy a udržování",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 13822.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3721",
+     "nazev": "Sběr a svoz nebezpečných odpadů",
+     "schvaleny": 50000.0,
+     "rozpocet": 50000.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 50000.0,
+       "rozpocet": 50000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3722",
+     "nazev": "Sběr a svoz komunálních odpadů",
+     "schvaleny": 150000.0,
+     "rozpocet": 150000.0,
+     "skutecnost": 148637.86,
+     "polozky": [
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 150000.0,
+       "rozpocet": 150000.0,
+       "skutecnost": 148637.86
+      }
+     ]
+    },
+    {
+     "paragraf": "3723",
+     "nazev": "Sběr a svoz ostatních odpadů jiných než nebezpečných a komunálních",
+     "schvaleny": 470000.0,
+     "rozpocet": 470000.0,
+     "skutecnost": 406228.78,
+     "polozky": [
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 30000.0,
+       "rozpocet": 30000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 3059.0
+      },
+      {
+       "kod": "5166",
+       "text": "Konzultační, poradenské a právní služby",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 22000.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 240000.0,
+       "rozpocet": 240000.0,
+       "skutecnost": 335203.78
+      },
+      {
+       "kod": "6121",
+       "text": "Stavby",
+       "schvaleny": 200000.0,
+       "rozpocet": 200000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "6129",
+       "text": "Nákup ostatního dlouhodobého hmotného majetku",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 45966.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3745",
+     "nazev": "Péče o vzhled obcí a veřejnou zeleň",
+     "schvaleny": 2053677.7,
+     "rozpocet": 2053677.7,
+     "skutecnost": 1812773.92,
+     "polozky": [
+      {
+       "kod": "5011",
+       "text": "Platy zaměstnanců v pracovním poměru vyjma zaměstnanců na služebních místech",
+       "schvaleny": 2678.0,
+       "rozpocet": 2678.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 71816.0,
+       "rozpocet": 71816.0,
+       "skutecnost": 123801.0
+      },
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 28184.0,
+       "rozpocet": 28184.0,
+       "skutecnost": 64815.13
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 238139.15,
+       "rozpocet": 238139.15,
+       "skutecnost": 421606.84
+      },
+      {
+       "kod": "5156",
+       "text": "Pohonné hmoty a maziva",
+       "schvaleny": 23192.0,
+       "rozpocet": 23192.0,
+       "skutecnost": 1473.0
+      },
+      {
+       "kod": "5166",
+       "text": "Konzultační, poradenské a právní služby",
+       "schvaleny": 30000.0,
+       "rozpocet": 30000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5167",
+       "text": "Služby školení a vzdělávání",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 256668.55,
+       "rozpocet": 256668.55,
+       "skutecnost": 1082246.95
+      },
+      {
+       "kod": "5171",
+       "text": "Opravy a udržování",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 45054.0
+      },
+      {
+       "kod": "6121",
+       "text": "Stavby",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 44527.0
+      },
+      {
+       "kod": "6123",
+       "text": "Dopravní prostředky",
+       "schvaleny": 1400000.0,
+       "rozpocet": 1400000.0,
+       "skutecnost": 29250.0
+      }
+     ]
+    },
+    {
+     "paragraf": "5213",
+     "nazev": "Krizová opatření",
+     "schvaleny": 5000.0,
+     "rozpocet": 5000.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5903",
+       "text": "Rezerva na krizová opatření",
+       "schvaleny": 5000.0,
+       "rozpocet": 5000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "5512",
+     "nazev": "Požární ochrana - dobrovolná část",
+     "schvaleny": 15000.0,
+     "rozpocet": 15000.0,
+     "skutecnost": 15000.0,
+     "polozky": [
+      {
+       "kod": "5321",
+       "text": "Neinvestiční transfery obcím",
+       "schvaleny": 15000.0,
+       "rozpocet": 15000.0,
+       "skutecnost": 15000.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6112",
+     "nazev": "Zastupitelstva obcí",
+     "schvaleny": 400000.0,
+     "rozpocet": 400000.0,
+     "skutecnost": 396560.5,
+     "polozky": [
+      {
+       "kod": "5023",
+       "text": "Odměny členů zastupitelstev obcí a krajů",
+       "schvaleny": 371000.0,
+       "rozpocet": 371000.0,
+       "skutecnost": 343558.0
+      },
+      {
+       "kod": "5032",
+       "text": "Povinné pojistné na veřejné zdravotní pojištění",
+       "schvaleny": 29000.0,
+       "rozpocet": 29000.0,
+       "skutecnost": 21240.0
+      },
+      {
+       "kod": "5166",
+       "text": "Konzultační, poradenské a právní služby",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 31762.5
+      }
+     ]
+    },
+    {
+     "paragraf": "6114",
+     "nazev": "Volby do Parlamentu ČR",
+     "schvaleny": 0.0,
+     "rozpocet": 0.0,
+     "skutecnost": 20292.0,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 19108.0
+      },
+      {
+       "kod": "5175",
+       "text": "Pohoštění",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 1184.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6171",
+     "nazev": "Činnost místní správy",
+     "schvaleny": 901134.0,
+     "rozpocet": 901134.0,
+     "skutecnost": 895272.3,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 300000.0,
+       "rozpocet": 300000.0,
+       "skutecnost": 89770.0
+      },
+      {
+       "kod": "5023",
+       "text": "Odměny členů zastupitelstev obcí a krajů",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 16686.0
+      },
+      {
+       "kod": "5032",
+       "text": "Povinné pojistné na veřejné zdravotní pojištění",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 1510.0
+      },
+      {
+       "kod": "5038",
+       "text": "Pojistné na zákonné pojištění odpovědnosti zaměstnavatele za škodu při pracovním úrazu nebo nemoci z povolání",
+       "schvaleny": 800.0,
+       "rozpocet": 800.0,
+       "skutecnost": 300.0
+      },
+      {
+       "kod": "5136",
+       "text": "Knihy a obdobné listinné informační prostředky",
+       "schvaleny": 2000.0,
+       "rozpocet": 2000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 113799.0,
+       "rozpocet": 113799.0,
+       "skutecnost": 103321.37
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 30000.0,
+       "rozpocet": 30000.0,
+       "skutecnost": 110589.1
+      },
+      {
+       "kod": "5151",
+       "text": "Studená voda včetně stočného a úplaty za odvod dešťových vod",
+       "schvaleny": 2000.0,
+       "rozpocet": 2000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5153",
+       "text": "Plyn",
+       "schvaleny": 62888.0,
+       "rozpocet": 62888.0,
+       "skutecnost": 16000.0
+      },
+      {
+       "kod": "5154",
+       "text": "Elektrická energie",
+       "schvaleny": 11384.0,
+       "rozpocet": 11384.0,
+       "skutecnost": 25670.3
+      },
+      {
+       "kod": "5161",
+       "text": "Poštovní služby",
+       "schvaleny": 4000.0,
+       "rozpocet": 4000.0,
+       "skutecnost": 3582.0
+      },
+      {
+       "kod": "5162",
+       "text": "Služby elektronických komunikací",
+       "schvaleny": 23800.0,
+       "rozpocet": 23800.0,
+       "skutecnost": 16381.98
+      },
+      {
+       "kod": "5163",
+       "text": "Služby peněžních ústavů",
+       "schvaleny": 11145.0,
+       "rozpocet": 11145.0,
+       "skutecnost": 45643.0
+      },
+      {
+       "kod": "5166",
+       "text": "Konzultační, poradenské a právní služby",
+       "schvaleny": 70000.0,
+       "rozpocet": 70000.0,
+       "skutecnost": 188437.5
+      },
+      {
+       "kod": "5167",
+       "text": "Služby školení a vzdělávání",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 4300.0
+      },
+      {
+       "kod": "5168",
+       "text": "Zpracování dat a služby související s informačními a komunikačními technologiemi",
+       "schvaleny": 111385.0,
+       "rozpocet": 111385.0,
+       "skutecnost": 44008.2
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 95000.0,
+       "rozpocet": 95000.0,
+       "skutecnost": 151009.97
+      },
+      {
+       "kod": "5171",
+       "text": "Opravy a udržování",
+       "schvaleny": 10000.0,
+       "rozpocet": 10000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5172",
+       "text": "Podlimitní programové vybavení",
+       "schvaleny": 16000.0,
+       "rozpocet": 16000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5173",
+       "text": "Cestovné",
+       "schvaleny": 1000.0,
+       "rozpocet": 1000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5175",
+       "text": "Pohoštění",
+       "schvaleny": 9383.0,
+       "rozpocet": 9383.0,
+       "skutecnost": 27464.3
+      },
+      {
+       "kod": "5222",
+       "text": "Neinvestiční transfery spolkům",
+       "schvaleny": 3500.0,
+       "rozpocet": 3500.0,
+       "skutecnost": 2820.08
+      },
+      {
+       "kod": "5321",
+       "text": "Neinvestiční transfery obcím",
+       "schvaleny": 1000.0,
+       "rozpocet": 1000.0,
+       "skutecnost": 4000.0
+      },
+      {
+       "kod": "5362",
+       "text": "Platby daní státnímu rozpočtu",
+       "schvaleny": 15600.0,
+       "rozpocet": 15600.0,
+       "skutecnost": 43605.0
+      },
+      {
+       "kod": "5363",
+       "text": "Úhrady sankcí jiným rozpočtům",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5365",
+       "text": "Platby daní krajům, obcím a státním fondům",
+       "schvaleny": 450.0,
+       "rozpocet": 450.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "6129",
+       "text": "Nákup ostatního dlouhodobého hmotného majetku",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 173.5
+      }
+     ]
+    },
+    {
+     "paragraf": "6310",
+     "nazev": "Obecné příjmy a výdaje z finančních operací",
+     "schvaleny": 3000.0,
+     "rozpocet": 3000.0,
+     "skutecnost": 1653.4,
+     "polozky": [
+      {
+       "kod": "5163",
+       "text": "Služby peněžních ústavů",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 1653.4
+      }
+     ]
+    },
+    {
+     "paragraf": "6330",
+     "nazev": "Převody vlastním fondům v rozpočtech územní úrovně",
+     "schvaleny": 0.0,
+     "rozpocet": 0.0,
+     "skutecnost": 300000.0,
+     "polozky": [
+      {
+       "kod": "5348",
+       "text": "Převody do vlastní pokladny",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 300000.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6399",
+     "nazev": "Ostatní finanční operace",
+     "schvaleny": 3867.0,
+     "rozpocet": 3867.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5362",
+       "text": "Platby daní státnímu rozpočtu",
+       "schvaleny": 3867.0,
+       "rozpocet": 3867.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6402",
+     "nazev": "Finanční vypořádání",
+     "schvaleny": 9400.0,
+     "rozpocet": 9400.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5364",
+       "text": "Vratky transferů poskytnutých z veřejných rozpočtů",
+       "schvaleny": 9400.0,
+       "rozpocet": 9400.0,
+       "skutecnost": 0.0
+      }
+     ]
+    }
+   ],
+   "prijmy_celkem": 4404174.22,
+   "vydaje_celkem": 4581010.95,
+   "prijmy_rozpocet": 3932239.0,
+   "vydaje_rozpocet": 5123904.7,
+   "prijmy_schvaleny": 3932239.0,
+   "vydaje_schvaleny": 5123904.7,
+   "ucty": {
+    "pocatek": 4770900.39,
+    "konec": 4594063.66
+   }
+  },
+  "2026": {
+   "k": "31.8.2026",
+   "prijmy": [
+    {
+     "paragraf": "",
+     "nazev": "Bez paragrafu",
+     "schvaleny": 4349829.0,
+     "rozpocet": 4349829.0,
+     "skutecnost": 2667933.71,
+     "polozky": [
+      {
+       "kod": "1111",
+       "text": "Příjem z daně z příjmů fyzických osob placené plátci",
+       "schvaleny": 550000.0,
+       "rozpocet": 550000.0,
+       "skutecnost": 420249.89
+      },
+      {
+       "kod": "1112",
+       "text": "Příjem z daně z příjmů fyzických osob placené poplatníky",
+       "schvaleny": 40000.0,
+       "rozpocet": 40000.0,
+       "skutecnost": 39574.29
+      },
+      {
+       "kod": "1113",
+       "text": "Příjem z daně z příjmů fyzických osob vybírané srážkou podle zvláštní sazby daně",
+       "schvaleny": 125000.0,
+       "rozpocet": 125000.0,
+       "skutecnost": 85019.19
+      },
+      {
+       "kod": "1121",
+       "text": "Příjem z daně z příjmů právnických osob",
+       "schvaleny": 800000.0,
+       "rozpocet": 800000.0,
+       "skutecnost": 563051.68
+      },
+      {
+       "kod": "1211",
+       "text": "Příjem z daně z přidané hodnoty",
+       "schvaleny": 1570000.0,
+       "rozpocet": 1570000.0,
+       "skutecnost": 1136862.29
+      },
+      {
+       "kod": "1341",
+       "text": "Příjem z poplatku ze psů",
+       "schvaleny": 2760.0,
+       "rozpocet": 2760.0,
+       "skutecnost": 4150.0
+      },
+      {
+       "kod": "1345",
+       "text": "Příjem z poplatku za obecní systém odpadového hospodářství a příjem z poplatku za odkládání komunálního odpadu z nemovité věci",
+       "schvaleny": 93500.0,
+       "rozpocet": 93500.0,
+       "skutecnost": 68106.0
+      },
+      {
+       "kod": "1361",
+       "text": "Příjem ze správních poplatků",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 50.0
+      },
+      {
+       "kod": "1381",
+       "text": "Příjem z daně z hazardních her s výjimkou dílčí daně z technických her",
+       "schvaleny": 18000.0,
+       "rozpocet": 18000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "1386",
+       "text": "Příjem z daně z hazardních her s výjimkou technických her neprovozovaných prostřednictvím internetu",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 21219.99
+      },
+      {
+       "kod": "1387",
+       "text": "Příjem z daně z technických her neprovozovaných prostřednictvím internetu",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 8105.67
+      },
+      {
+       "kod": "1511",
+       "text": "Příjem z daně z nemovitých věcí",
+       "schvaleny": 360000.0,
+       "rozpocet": 360000.0,
+       "skutecnost": 273608.71
+      },
+      {
+       "kod": "4112",
+       "text": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "schvaleny": 70500.0,
+       "rozpocet": 70500.0,
+       "skutecnost": 47936.0
+      },
+      {
+       "kod": "4216",
+       "text": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "schvaleny": 672000.0,
+       "rozpocet": 672000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "4111",
+       "text": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "schvaleny": 48069.0,
+       "rozpocet": 48069.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2341",
+     "nazev": "Vodní díla v zemědělské krajině",
+     "schvaleny": 500.0,
+     "rozpocet": 500.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "2131",
+       "text": "Příjem z pronájmu nebo pachtu pozemků",
+       "schvaleny": 500.0,
+       "rozpocet": 500.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3639",
+     "nazev": "Komunální služby a územní rozvoj jinde nezařazené",
+     "schvaleny": 6000.0,
+     "rozpocet": 6000.0,
+     "skutecnost": 1878.8,
+     "polozky": [
+      {
+       "kod": "2329",
+       "text": "Ostatní nedaňové příjmy jinde nezařazené",
+       "schvaleny": 6000.0,
+       "rozpocet": 6000.0,
+       "skutecnost": 1878.8
+      }
+     ]
+    },
+    {
+     "paragraf": "3726",
+     "nazev": "Využívání a zneškodňování ostatních odpadů",
+     "schvaleny": 80000.0,
+     "rozpocet": 80000.0,
+     "skutecnost": 71233.0,
+     "polozky": [
+      {
+       "kod": "2324",
+       "text": "Přijaté neinvestiční příspěvky a náhrady",
+       "schvaleny": 80000.0,
+       "rozpocet": 80000.0,
+       "skutecnost": 71233.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3745",
+     "nazev": "Péče o vzhled obcí a veřejnou zeleň",
+     "schvaleny": 50000.0,
+     "rozpocet": 50000.0,
+     "skutecnost": 100000.0,
+     "polozky": [
+      {
+       "kod": "2321",
+       "text": "Přijaté peněžité neinvestiční dary",
+       "schvaleny": 50000.0,
+       "rozpocet": 50000.0,
+       "skutecnost": 100000.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6171",
+     "nazev": "Činnost místní správy",
+     "schvaleny": 217910.0,
+     "rozpocet": 217910.0,
+     "skutecnost": 41119.9,
+     "polozky": [
+      {
+       "kod": "2111",
+       "text": "Příjem z poskytování služeb, výrobků, prací, výkonů a práv",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 10835.9
+      },
+      {
+       "kod": "2131",
+       "text": "Příjem z pronájmu nebo pachtu pozemků",
+       "schvaleny": 41000.0,
+       "rozpocet": 41000.0,
+       "skutecnost": 13920.0
+      },
+      {
+       "kod": "2132",
+       "text": "Příjem z pronájmu nebo pachtu ostatních nemovitých věcí a jejich částí",
+       "schvaleny": 28910.0,
+       "rozpocet": 28910.0,
+       "skutecnost": 1158.0
+      },
+      {
+       "kod": "2321",
+       "text": "Přijaté peněžité neinvestiční dary",
+       "schvaleny": 148000.0,
+       "rozpocet": 148000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "2322",
+       "text": "Položka 2322",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 15206.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6409",
+     "nazev": "Ostatní činnosti jinde nezařazené",
+     "schvaleny": 0.0,
+     "rozpocet": 0.0,
+     "skutecnost": 49809.0,
+     "polozky": [
+      {
+       "kod": "2329",
+       "text": "Ostatní nedaňové příjmy jinde nezařazené",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 49809.0
+      }
+     ]
+    }
+   ],
+   "vydaje": [
+    {
+     "paragraf": "6402",
+     "nazev": "Finanční vypořádání",
+     "schvaleny": 9400.0,
+     "rozpocet": 12400.0,
+     "skutecnost": 12208.0,
+     "polozky": [
+      {
+       "kod": "5364",
+       "text": "Vratky transferů poskytnutých z veřejných rozpočtů",
+       "schvaleny": 9400.0,
+       "rozpocet": 12400.0,
+       "skutecnost": 12208.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2212",
+     "nazev": "Silnice",
+     "schvaleny": 5000.0,
+     "rozpocet": 7000.0,
+     "skutecnost": 6642.9,
+     "polozky": [
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 0.0,
+       "rozpocet": 2000.0,
+       "skutecnost": 6642.9
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 5000.0,
+       "rozpocet": 5000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2219",
+     "nazev": "Ostatní záležitosti pozemních komunikací",
+     "schvaleny": 86000.0,
+     "rozpocet": 96000.0,
+     "skutecnost": 93613.0,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 15000.0,
+       "rozpocet": 15000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 10000.0,
+       "rozpocet": 10000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 5000.0,
+       "rozpocet": 15000.0,
+       "skutecnost": 17782.0
+      },
+      {
+       "kod": "5156",
+       "text": "Pohonné hmoty a maziva",
+       "schvaleny": 4000.0,
+       "rozpocet": 4000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 2000.0,
+       "rozpocet": 2000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5171",
+       "text": "Opravy a udržování",
+       "schvaleny": 50000.0,
+       "rozpocet": 50000.0,
+       "skutecnost": 75831.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2221",
+     "nazev": "Provoz veřejné silniční dopravy",
+     "schvaleny": 40000.0,
+     "rozpocet": 40000.0,
+     "skutecnost": 2843.0,
+     "polozky": [
+      {
+       "kod": "5323",
+       "text": "Neinvestiční transfery krajům",
+       "schvaleny": 40000.0,
+       "rozpocet": 40000.0,
+       "skutecnost": 2843.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2310",
+     "nazev": "Pitná voda",
+     "schvaleny": 34000.0,
+     "rozpocet": 34000.0,
+     "skutecnost": 2238.5,
+     "polozky": [
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 15000.0,
+       "rozpocet": 15000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 4000.0,
+       "rozpocet": 4000.0,
+       "skutecnost": 2238.5
+      },
+      {
+       "kod": "5171",
+       "text": "Opravy a udržování",
+       "schvaleny": 15000.0,
+       "rozpocet": 15000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2321",
+     "nazev": "Odvádění a čistění odpadních vod a nakládání s kaly",
+     "schvaleny": 15000.0,
+     "rozpocet": 40000.0,
+     "skutecnost": 35450.13,
+     "polozky": [
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 15000.0,
+       "rozpocet": 40000.0,
+       "skutecnost": 35450.13
+      }
+     ]
+    },
+    {
+     "paragraf": "2339",
+     "nazev": "Záležitosti vodních toků a vodohospodářských děl jinde nezařazené",
+     "schvaleny": 2000.0,
+     "rozpocet": 2000.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 2000.0,
+       "rozpocet": 2000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "2341",
+     "nazev": "Vodní díla v zemědělské krajině",
+     "schvaleny": 5000.0,
+     "rozpocet": 5000.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 5000.0,
+       "rozpocet": 5000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3326",
+     "nazev": "Pořízení, zachování a obnova hodnot místního kulturního, národního a historického povědomí",
+     "schvaleny": 24000.0,
+     "rozpocet": 24000.0,
+     "skutecnost": 2077.23,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 2000.0,
+       "rozpocet": 2000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 11000.0,
+       "rozpocet": 11000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5154",
+       "text": "Elektrická energie",
+       "schvaleny": 6000.0,
+       "rozpocet": 6000.0,
+       "skutecnost": 2077.23
+      },
+      {
+       "kod": "5175",
+       "text": "Pohoštění",
+       "schvaleny": 5000.0,
+       "rozpocet": 5000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3399",
+     "nazev": "Ostatní záležitosti kultury, církví a sdělovacích prostředků",
+     "schvaleny": 90000.0,
+     "rozpocet": 90000.0,
+     "skutecnost": 49572.34,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 6000.0,
+       "rozpocet": 6000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 9000.0,
+       "rozpocet": 9000.0,
+       "skutecnost": 30110.34
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 50000.0,
+       "rozpocet": 50000.0,
+       "skutecnost": 19172.0
+      },
+      {
+       "kod": "5175",
+       "text": "Pohoštění",
+       "schvaleny": 25000.0,
+       "rozpocet": 25000.0,
+       "skutecnost": 290.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3421",
+     "nazev": "Využití volného času dětí a mládeže",
+     "schvaleny": 7000.0,
+     "rozpocet": 27000.0,
+     "skutecnost": 21500.0,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 1000.0,
+       "rozpocet": 1000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5171",
+       "text": "Opravy a udržování",
+       "schvaleny": 0.0,
+       "rozpocet": 20000.0,
+       "skutecnost": 21500.0
+      },
+      {
+       "kod": "5175",
+       "text": "Pohoštění",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3631",
+     "nazev": "Veřejné osvětlení",
+     "schvaleny": 190000.0,
+     "rozpocet": 190000.0,
+     "skutecnost": 65183.12,
+     "polozky": [
+      {
+       "kod": "5154",
+       "text": "Elektrická energie",
+       "schvaleny": 110000.0,
+       "rozpocet": 110000.0,
+       "skutecnost": 65183.12
+      },
+      {
+       "kod": "5171",
+       "text": "Opravy a udržování",
+       "schvaleny": 80000.0,
+       "rozpocet": 80000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3639",
+     "nazev": "Komunální služby a územní rozvoj jinde nezařazené",
+     "schvaleny": 40500.0,
+     "rozpocet": 40500.0,
+     "skutecnost": 10072.12,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 5000.0,
+       "rozpocet": 5000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 10000.0,
+       "rozpocet": 10000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 5000.0,
+       "rozpocet": 5000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5154",
+       "text": "Elektrická energie",
+       "schvaleny": 4000.0,
+       "rozpocet": 4000.0,
+       "skutecnost": 10072.12
+      },
+      {
+       "kod": "5156",
+       "text": "Pohonné hmoty a maziva",
+       "schvaleny": 1500.0,
+       "rozpocet": 1500.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 15000.0,
+       "rozpocet": 15000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3721",
+     "nazev": "Sběr a svoz nebezpečných odpadů",
+     "schvaleny": 50000.0,
+     "rozpocet": 50000.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 50000.0,
+       "rozpocet": 50000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "3722",
+     "nazev": "Sběr a svoz komunálních odpadů",
+     "schvaleny": 360000.0,
+     "rozpocet": 360000.0,
+     "skutecnost": 186469.23,
+     "polozky": [
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 360000.0,
+       "rozpocet": 360000.0,
+       "skutecnost": 150713.73
+      },
+      {
+       "kod": "6121",
+       "text": "Stavby",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 35755.5
+      }
+     ]
+    },
+    {
+     "paragraf": "3723",
+     "nazev": "Sběr a svoz ostatních odpadů jiných než nebezpečných a komunálních",
+     "schvaleny": 270000.0,
+     "rozpocet": 270000.0,
+     "skutecnost": 163689.87,
+     "polozky": [
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 30000.0,
+       "rozpocet": 30000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 240000.0,
+       "rozpocet": 240000.0,
+       "skutecnost": 163689.87
+      }
+     ]
+    },
+    {
+     "paragraf": "3745",
+     "nazev": "Péče o vzhled obcí a veřejnou zeleň",
+     "schvaleny": 757054.0,
+     "rozpocet": 1977054.0,
+     "skutecnost": 1958423.3,
+     "polozky": [
+      {
+       "kod": "5011",
+       "text": "Platy zaměstnanců v pracovním poměru vyjma zaměstnanců na služebních místech",
+       "schvaleny": 2678.0,
+       "rozpocet": 2678.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 100000.0,
+       "rozpocet": 100000.0,
+       "skutecnost": 113390.0
+      },
+      {
+       "kod": "5134",
+       "text": "Prádlo, oděv a obuv",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 2455.0
+      },
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 28184.0,
+       "rozpocet": 28184.0,
+       "skutecnost": 68032.0
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 300000.0,
+       "rozpocet": 300000.0,
+       "skutecnost": 7255.0
+      },
+      {
+       "kod": "5156",
+       "text": "Pohonné hmoty a maziva",
+       "schvaleny": 23192.0,
+       "rozpocet": 23192.0,
+       "skutecnost": 6255.8
+      },
+      {
+       "kod": "5167",
+       "text": "Služby školení a vzdělávání",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 300000.0,
+       "rozpocet": 580000.0,
+       "skutecnost": 387478.5
+      },
+      {
+       "kod": "5171",
+       "text": "Opravy a udržování",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 24259.0
+      },
+      {
+       "kod": "5221",
+       "text": "Položka 5221",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 5000.0
+      },
+      {
+       "kod": "6129",
+       "text": "Nákup ostatního dlouhodobého hmotného majetku",
+       "schvaleny": 0.0,
+       "rozpocet": 940000.0,
+       "skutecnost": 1344298.0
+      }
+     ]
+    },
+    {
+     "paragraf": "5213",
+     "nazev": "Krizová opatření",
+     "schvaleny": 5000.0,
+     "rozpocet": 5000.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5903",
+       "text": "Rezerva na krizová opatření",
+       "schvaleny": 5000.0,
+       "rozpocet": 5000.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "5512",
+     "nazev": "Požární ochrana - dobrovolná část",
+     "schvaleny": 25000.0,
+     "rozpocet": 75000.0,
+     "skutecnost": 70000.0,
+     "polozky": [
+      {
+       "kod": "5321",
+       "text": "Neinvestiční transfery obcím",
+       "schvaleny": 25000.0,
+       "rozpocet": 75000.0,
+       "skutecnost": 70000.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6112",
+     "nazev": "Zastupitelstva obcí",
+     "schvaleny": 400000.0,
+     "rozpocet": 400000.0,
+     "skutecnost": 332046.0,
+     "polozky": [
+      {
+       "kod": "5023",
+       "text": "Odměny členů zastupitelstev obcí a krajů",
+       "schvaleny": 371000.0,
+       "rozpocet": 371000.0,
+       "skutecnost": 312916.0
+      },
+      {
+       "kod": "5032",
+       "text": "Povinné pojistné na veřejné zdravotní pojištění",
+       "schvaleny": 29000.0,
+       "rozpocet": 29000.0,
+       "skutecnost": 19130.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6171",
+     "nazev": "Činnost místní správy",
+     "schvaleny": 780950.0,
+     "rozpocet": 780950.0,
+     "skutecnost": 659271.58,
+     "polozky": [
+      {
+       "kod": "5021",
+       "text": "Ostatní osobní výdaje",
+       "schvaleny": 250000.0,
+       "rozpocet": 250000.0,
+       "skutecnost": 37150.0
+      },
+      {
+       "kod": "5038",
+       "text": "Pojistné na zákonné pojištění odpovědnosti zaměstnavatele za škodu při pracovním úrazu nebo nemoci z povolání",
+       "schvaleny": 800.0,
+       "rozpocet": 800.0,
+       "skutecnost": 300.0
+      },
+      {
+       "kod": "5136",
+       "text": "Knihy a obdobné listinné informační prostředky",
+       "schvaleny": 2000.0,
+       "rozpocet": 2000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5137",
+       "text": "Drobný dlouhodobý hmotný majetek",
+       "schvaleny": 15000.0,
+       "rozpocet": 15000.0,
+       "skutecnost": 13191.26
+      },
+      {
+       "kod": "5139",
+       "text": "Nákup materiálu jinde nezařazený",
+       "schvaleny": 30000.0,
+       "rozpocet": 30000.0,
+       "skutecnost": 30612.74
+      },
+      {
+       "kod": "5151",
+       "text": "Studená voda včetně stočného a úplaty za odvod dešťových vod",
+       "schvaleny": 2000.0,
+       "rozpocet": 2000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5153",
+       "text": "Plyn",
+       "schvaleny": 62888.0,
+       "rozpocet": 62888.0,
+       "skutecnost": 12800.0
+      },
+      {
+       "kod": "5154",
+       "text": "Elektrická energie",
+       "schvaleny": 11384.0,
+       "rozpocet": 11384.0,
+       "skutecnost": 21111.45
+      },
+      {
+       "kod": "5161",
+       "text": "Poštovní služby",
+       "schvaleny": 4000.0,
+       "rozpocet": 4000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5162",
+       "text": "Služby elektronických komunikací",
+       "schvaleny": 23800.0,
+       "rozpocet": 23800.0,
+       "skutecnost": 10131.82
+      },
+      {
+       "kod": "5163",
+       "text": "Služby peněžních ústavů",
+       "schvaleny": 11145.0,
+       "rozpocet": 11145.0,
+       "skutecnost": 52966.0
+      },
+      {
+       "kod": "5166",
+       "text": "Konzultační, poradenské a právní služby",
+       "schvaleny": 150000.0,
+       "rozpocet": 150000.0,
+       "skutecnost": 330337.5
+      },
+      {
+       "kod": "5167",
+       "text": "Služby školení a vzdělávání",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5168",
+       "text": "Zpracování dat a služby související s informačními a komunikačními technologiemi",
+       "schvaleny": 60000.0,
+       "rozpocet": 60000.0,
+       "skutecnost": 73344.15
+      },
+      {
+       "kod": "5169",
+       "text": "Nákup ostatních služeb",
+       "schvaleny": 95000.0,
+       "rozpocet": 95000.0,
+       "skutecnost": 57421.7
+      },
+      {
+       "kod": "5171",
+       "text": "Opravy a udržování",
+       "schvaleny": 10000.0,
+       "rozpocet": 10000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5172",
+       "text": "Podlimitní programové vybavení",
+       "schvaleny": 16000.0,
+       "rozpocet": 16000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5173",
+       "text": "Cestovné",
+       "schvaleny": 1000.0,
+       "rozpocet": 1000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5175",
+       "text": "Pohoštění",
+       "schvaleny": 9383.0,
+       "rozpocet": 9383.0,
+       "skutecnost": 41.0
+      },
+      {
+       "kod": "5222",
+       "text": "Neinvestiční transfery spolkům",
+       "schvaleny": 3500.0,
+       "rozpocet": 3500.0,
+       "skutecnost": 2832.96
+      },
+      {
+       "kod": "5321",
+       "text": "Neinvestiční transfery obcím",
+       "schvaleny": 1000.0,
+       "rozpocet": 1000.0,
+       "skutecnost": 1000.0
+      },
+      {
+       "kod": "5362",
+       "text": "Platby daní státnímu rozpočtu",
+       "schvaleny": 15600.0,
+       "rozpocet": 15600.0,
+       "skutecnost": 14062.0
+      },
+      {
+       "kod": "5363",
+       "text": "Úhrady sankcí jiným rozpočtům",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5365",
+       "text": "Platby daní krajům, obcím a státním fondům",
+       "schvaleny": 450.0,
+       "rozpocet": 450.0,
+       "skutecnost": 0.0
+      },
+      {
+       "kod": "5492",
+       "text": "Dary obyvatelstvu",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 1969.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6310",
+     "nazev": "Obecné příjmy a výdaje z finančních operací",
+     "schvaleny": 3000.0,
+     "rozpocet": 3000.0,
+     "skutecnost": 1358.4,
+     "polozky": [
+      {
+       "kod": "5163",
+       "text": "Služby peněžních ústavů",
+       "schvaleny": 3000.0,
+       "rozpocet": 3000.0,
+       "skutecnost": 1358.4
+      }
+     ]
+    },
+    {
+     "paragraf": "6399",
+     "nazev": "Ostatní finanční operace",
+     "schvaleny": 3867.0,
+     "rozpocet": 3867.0,
+     "skutecnost": 0.0,
+     "polozky": [
+      {
+       "kod": "5362",
+       "text": "Platby daní státnímu rozpočtu",
+       "schvaleny": 3867.0,
+       "rozpocet": 3867.0,
+       "skutecnost": 0.0
+      }
+     ]
+    },
+    {
+     "paragraf": "6409",
+     "nazev": "Ostatní činnosti jinde nezařazené",
+     "schvaleny": 0.0,
+     "rozpocet": 0.0,
+     "skutecnost": 9975.0,
+     "polozky": [
+      {
+       "kod": "5909",
+       "text": "Ostatní neinvestiční výdaje jinde nezařazené",
+       "schvaleny": 0.0,
+       "rozpocet": 0.0,
+       "skutecnost": 9975.0
+      }
+     ]
+    }
+   ],
+   "prijmy_celkem": 2931974.41,
+   "vydaje_celkem": 3682633.72,
+   "prijmy_rozpocet": 4704239.0,
+   "vydaje_rozpocet": 4532771.0,
+   "prijmy_schvaleny": 4704239.0,
+   "vydaje_schvaleny": 3202771.0,
+   "ucty": {
+    "pocatek": 4753665.66,
+    "konec": 4003006.35
+   },
+   "opatreni": [
+    "RO č. 2/2026"
+   ]
+  }
+ },
+ "paragraf_nazvy": {
+  "2341": "Vodní díla v zemědělské krajině",
+  "3639": "Komunální služby a územní rozvoj jinde nezařazené",
+  "3726": "Využívání a zneškodňování ostatních odpadů",
+  "6171": "Činnost místní správy",
+  "6330": "Převody vlastním fondům v rozpočtech územní úrovně",
+  "2212": "Silnice",
+  "2219": "Ostatní záležitosti pozemních komunikací",
+  "2310": "Pitná voda",
+  "2321": "Odvádění a čistění odpadních vod a nakládání s kaly",
+  "2339": "Záležitosti vodních toků a vodohospodářských děl jinde nezařazené",
+  "3326": "Pořízení, zachování a obnova hodnot místního kulturního, národního a historického povědomí",
+  "3399": "Ostatní záležitosti kultury, církví a sdělovacích prostředků",
+  "3421": "Využití volného času dětí a mládeže",
+  "3631": "Veřejné osvětlení",
+  "3721": "Sběr a svoz nebezpečných odpadů",
+  "3722": "Sběr a svoz komunálních odpadů",
+  "3723": "Sběr a svoz ostatních odpadů jiných než nebezpečných a komunálních",
+  "3745": "Péče o vzhled obcí a veřejnou zeleň",
+  "5213": "Krizová opatření",
+  "5512": "Požární ochrana - dobrovolná část",
+  "6112": "Zastupitelstva obcí",
+  "6115": "Volby do zastupitelstev územních samosprávných celků",
+  "6310": "Obecné příjmy a výdaje z finančních operací",
+  "6118": "Volba prezidenta republiky",
+  "6399": "Ostatní finanční operace",
+  "6402": "Finanční vypořádání",
+  "2221": "Provoz veřejné silniční dopravy",
+  "6117": "Volby do Evropského parlamentu",
+  "6114": "Volby do Parlamentu ČR"
+ }
+}
