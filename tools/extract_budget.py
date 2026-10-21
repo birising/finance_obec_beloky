@@ -23,7 +23,7 @@ FILES = {
     DATA / "fin" / "FIN_2-12_M_2023-12.pdf": 2023,
     DATA / "fin" / "FIN_2-12_M_2024-12.pdf": 2024,
     DATA / "fin" / "FIN_2-12_M_2025-12.pdf": 2025,
-    DATA / "fin" / "FIN_2-12_M_2026-08.pdf": 2026,  # printed without a text layer -> OCR
+    DATA / "fin" / "FIN_2-12_M_2026-09.pdf": 2026,
 }
 
 # Budget amendments approved after the latest statement was compiled. An amendment
@@ -78,7 +78,7 @@ def parse_ucty(pdf):
     """Bank account and cash balances (legacy layout part VI., compact layout part II.).
     Returns (opening balance, closing balance) = main bank account + cash."""
     poc = kon = 0.0
-    rx = re.compile(r"^(?:\d+\s+)?(Základní běžný účet ÚSC|Pokladna)\s+\d{3,4}\s+(-?[\d\s\xa0]+,\d{2})\s+(-?[\d\s\xa0]+,\d{2})")
+    rx = re.compile(r"^(?:\d+(?:,\d+)?\s+)?(Základní běžný účet ÚSC|Pokladna)\s+\d{3,4}\s+(-?[\d\s\xa0]+,\d{2})\s+(-?[\d\s\xa0]+,\d{2})")
     for page in pdf.pages:
         for line in (page.extract_text() or "").splitlines():
             l = line.strip()
@@ -245,6 +245,7 @@ for path in RO_FILES:
         continue
     if schvaleno and y.get("k") and parse_date(schvaleno) <= parse_date(y["k"]):
         print(f"RO no. {cislo}/{rok} approved {schvaleno} <= statement as of {y['k']} — already included, skipped", file=sys.stderr)
+        y.setdefault("opatreni", []).append(f"RO č. {cislo}/{rok} (již ve výkazu)")
         continue
     for z in zmeny:
         groups = y[z["sekce"]]
@@ -268,7 +269,10 @@ PARAGRAF_FALLBACK = {
     "6409": "Ostatní činnosti jinde nezařazené",
 }
 POLOZKA_FALLBACK = {
+    "2322": "Přijaté pojistné náhrady",
+    "4213": "Investiční přijaté transfery ze státních fondů",
     "4216": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+    "5221": "Neinvestiční transfery fundacím, ústavům a obecně prospěšným společnostem",
     "5134": "Prádlo, oděv a obuv",
     "5492": "Dary obyvatelstvu",
 }
