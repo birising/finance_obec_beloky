@@ -115,6 +115,8 @@ deploy.sh ──scp──► web server (static files served by Caddy)
 
 ### P2 — public site
 
+A detailed UI review with screenshots and a prioritised fix list is in [UI-REVIEW.md](UI-REVIEW.md).
+
 * Write view state to the URL (`history.replaceState`) and update the footer per year.
 * "What it means" box per year: operating balance, reserve in months of spending, biggest
   changes against the previous year, in plain Czech.
