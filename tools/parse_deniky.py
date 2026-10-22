@@ -80,61 +80,68 @@ def kat_odpady(pol, pozn):
 
 
 YEARS = {"2023": rows_2023, "2024": rows_2024, "2025": rows_2025}
-interni = {"generovano": datetime.date.today().isoformat(),
-           "pozn": "Zdroj: účetní deníky obce. Jen pro interní použití (/interni/).", "roky": {}}
-odpady_sluzby = {}
 
-for rok, gen in YEARS.items():
-    # budget expenditure entries: paragraph filled in, item 5xxx/6xxx, accounts 231/261
-    vyd = [r for r in gen() if r["par"] and r["pol"][:1] in "56" and r["su"] in ("231", "261")]
-    # (document, note) -> one payment; a document is often a whole bank statement and
-    # the note distinguishes individual payments; an invoice split over several
-    # paragraph/item pairs is summed up
-    dokl = {}
-    for r in vyd:
-        key = (r["doklad"], r["pozn"] or f"§{r['par']}/{r['pol']}")
-        d = dokl.setdefault(key, {"castka": 0.0, "mesic": r["mesic"], "pars": set(), "pozn": r["pozn"]})
-        d["castka"] += r["dal"] - r["md"]
-        d["pars"].add(r["par"])
-    platby = sorted(({"castka": round(v["castka"], 2), "mesic": v["mesic"],
-                      "par": sorted(v["pars"]), "pozn": v["pozn"][:120]}
-                     for v in dokl.values() if v["castka"] > 0), key=lambda x: -x["castka"])
-    mesicni = collections.Counter()
-    par_sum = collections.Counter()
-    for r in vyd:
-        amt = r["dal"] - r["md"]
-        if r["mesic"]: mesicni[r["mesic"]] += amt
-        par_sum[r["par"]] += amt
-    interni["roky"][rok] = {
-        "vydaje_celkem": round(sum(v["castka"] for v in dokl.values()), 2),
-        "top_platby": platby[:40],
-        "mesicni": {str(m): round(v, 2) for m, v in sorted(mesicni.items())},
-        "paragrafy": {p: round(v, 2) for p, v in par_sum.most_common() if abs(v) > 0.005},
-        "odpady_platby": sorted(({"castka": round(r["dal"] - r["md"], 2), "mesic": r["mesic"],
-                                  "par": r["par"], "kat": kat_odpady(r["pol"], r["pozn"]),
-                                  "pozn": r["pozn"][:90]}
-                                 for r in vyd if r["par"].startswith("372")), key=lambda x: -x["castka"]),
-    }
-    # public yearly §372x totals per category
-    ksum = collections.Counter()
-    for r in vyd:
-        if r["par"].startswith("372"):
-            ksum[kat_odpady(r["pol"], r["pozn"])] += r["dal"] - r["md"]
-    odpady_sluzby[rok] = {k: round(v, 2) for k, v in ksum.items() if abs(v) > 0.005}
-    print(f"{rok}: {len(dokl)} documents, expenditure {interni['roky'][rok]['vydaje_celkem']:,.0f}, "
-          f"§372x categories {dict((k, round(v)) for k, v in ksum.items())}")
 
-json.dump(interni, open(OUT_INT, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
-print(f"WROTE {OUT_INT}")
+def main():
+    interni = {"generovano": datetime.date.today().isoformat(),
+               "pozn": "Zdroj: účetní deníky obce. Jen pro interní použití (/interni/).", "roky": {}}
+    odpady_sluzby = {}
 
-# add "sluzby" to odpady.json (unallocated remainder = difference against the FIN main series)
-odp = json.load(open(OUT_ODP))
-fin = {str(r["rok"]): r["vydaje"] for r in odp["roky"]}
-for rok, row in odpady_sluzby.items():
-    zbytek = round(fin[rok] - sum(row.values()), 2)
-    if abs(zbytek) > 1:
-        row["nezauctovano"] = zbytek
-odp["sluzby"] = {"zdroj": "účetní deníky obce (souhrny po druzích služeb)", "roky": odpady_sluzby,
-                 "pozn_2025": "deník 2025 exportován k 10. 12. 2025 — prosincové platby chybí"}
-json.dump(odp, open(OUT_ODP, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-print(f"WROTE {OUT_ODP} (sluzby)")
+    for rok, gen in YEARS.items():
+        # budget expenditure entries: paragraph filled in, item 5xxx/6xxx, accounts 231/261
+        vyd = [r for r in gen() if r["par"] and r["pol"][:1] in "56" and r["su"] in ("231", "261")]
+        # (document, note) -> one payment; a document is often a whole bank statement and
+        # the note distinguishes individual payments; an invoice split over several
+        # paragraph/item pairs is summed up
+        dokl = {}
+        for r in vyd:
+            key = (r["doklad"], r["pozn"] or f"§{r['par']}/{r['pol']}")
+            d = dokl.setdefault(key, {"castka": 0.0, "mesic": r["mesic"], "pars": set(), "pozn": r["pozn"]})
+            d["castka"] += r["dal"] - r["md"]
+            d["pars"].add(r["par"])
+        platby = sorted(({"castka": round(v["castka"], 2), "mesic": v["mesic"],
+                          "par": sorted(v["pars"]), "pozn": v["pozn"][:120]}
+                         for v in dokl.values() if v["castka"] > 0), key=lambda x: -x["castka"])
+        mesicni = collections.Counter()
+        par_sum = collections.Counter()
+        for r in vyd:
+            amt = r["dal"] - r["md"]
+            if r["mesic"]: mesicni[r["mesic"]] += amt
+            par_sum[r["par"]] += amt
+        interni["roky"][rok] = {
+            "vydaje_celkem": round(sum(v["castka"] for v in dokl.values()), 2),
+            "top_platby": platby[:40],
+            "mesicni": {str(m): round(v, 2) for m, v in sorted(mesicni.items())},
+            "paragrafy": {p: round(v, 2) for p, v in par_sum.most_common() if abs(v) > 0.005},
+            "odpady_platby": sorted(({"castka": round(r["dal"] - r["md"], 2), "mesic": r["mesic"],
+                                      "par": r["par"], "kat": kat_odpady(r["pol"], r["pozn"]),
+                                      "pozn": r["pozn"][:90]}
+                                     for r in vyd if r["par"].startswith("372")), key=lambda x: -x["castka"]),
+        }
+        # public yearly §372x totals per category
+        ksum = collections.Counter()
+        for r in vyd:
+            if r["par"].startswith("372"):
+                ksum[kat_odpady(r["pol"], r["pozn"])] += r["dal"] - r["md"]
+        odpady_sluzby[rok] = {k: round(v, 2) for k, v in ksum.items() if abs(v) > 0.005}
+        print(f"{rok}: {len(dokl)} documents, expenditure {interni['roky'][rok]['vydaje_celkem']:,.0f}, "
+              f"§372x categories {dict((k, round(v)) for k, v in ksum.items())}")
+
+    json.dump(interni, open(OUT_INT, "w", encoding="utf-8"), ensure_ascii=False, separators=(",", ":"))
+    print(f"WROTE {OUT_INT}")
+
+    # add "sluzby" to odpady.json (unallocated remainder = difference against the FIN main series)
+    odp = json.load(open(OUT_ODP))
+    fin = {str(r["rok"]): r["vydaje"] for r in odp["roky"]}
+    for rok, row in odpady_sluzby.items():
+        zbytek = round(fin[rok] - sum(row.values()), 2)
+        if abs(zbytek) > 1:
+            row["nezauctovano"] = zbytek
+    odp["sluzby"] = {"zdroj": "účetní deníky obce (souhrny po druzích služeb)", "roky": odpady_sluzby,
+                     "pozn_2025": "deník 2025 exportován k 10. 12. 2025 — prosincové platby chybí"}
+    json.dump(odp, open(OUT_ODP, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    print(f"WROTE {OUT_ODP} (sluzby)")
+
+
+if __name__ == "__main__":
+    main()

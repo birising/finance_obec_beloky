@@ -17,3 +17,7 @@ __pycache__/
 # Internal audit analysis (findings derived partly from the accounting journals)
 web/interni/audit-*.html
 tools/build_audit.py
+
+# Internal economic analysis (narrative uses the accounting journals)
+web/interni/hospodareni-*.html
+tools/build_hospodareni.py
