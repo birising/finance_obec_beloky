@@ -319,3 +319,152 @@ if __name__ == "__main__":
     for b in BENCH:
         print(b["nazev"], {k: round(v) for k, v in b.items() if isinstance(v, float)})
     print("areas", {y: {k: round(v) for k, v in a.items()} for y, a in AREA_Y.items() if y >= "2019"})
+
+
+# ---------- before / after the change of mayor (21 April 2026) ----------
+# "Before" = January–April (cumulative MONITOR figures to 30 April; the ten days after 21 April are
+# dominated by invoices for earlier orders), "after" = May–September (statement 9/2026 minus 30 April).
+# Each period is compared with the same months of 2024 and 2025 to remove seasonality.
+import extract_budget as EB  # noqa: E402
+
+TENURE_START = "21. 4. 2026"
+SPLIT = 4
+PP_ROWS = [  # key, label, item filter
+    ("opex", "Provozní výdaje celkem", lambda k: k[0] == "5"),
+    ("5169", "Nakupované služby (5169)", lambda k: k == "5169"),
+    ("513x", "Materiál a drobný majetek (513x)", lambda k: k[:3] == "513"),
+    ("5166", "Konzultační, právní a účetní služby (5166)", lambda k: k == "5166"),
+    ("5023", "Odměny zastupitelů (5023)", lambda k: k == "5023"),
+    ("5021", "Dohody (5021)", lambda k: k == "5021"),
+    ("517x", "Opravy a údržba (517x)", lambda k: k[:3] == "517"),
+    ("515x", "Energie a PHM (515x)", lambda k: k[:3] == "515"),
+    ("trans", "Transfery a dary (52xx–54xx)", lambda k: k[:2] in ("52", "53", "54")),
+    ("inv", "Investice (6xxx)", lambda k: k[0] == "6"),
+]
+PP_REV = [
+    ("rev", "Příjmy celkem", lambda k: True),
+    ("rud", "Sdílené daně", lambda k: k in ("1111", "1112", "1113", "1121", "1211")),
+    ("vlastni", "Daň z nemovitostí, poplatky, nedaňové příjmy", lambda k: k == "1511" or (k[0] in "12" and k[:2] not in ("11", "12"))),
+    ("dotace", "Dotace a transfery (4xxx)", lambda k: k[0] == "4"),
+]
+
+
+def _sub(a, b):
+    return {k: a.get(k, 0.0) - b.get(k, 0.0) for k in set(a) | set(b)}
+
+
+def _fin_pdf(name):
+    """Statement PDF -> (as-of date, {item: actual}, {paragraph: actual}, {(par, item): actual}) without internal transfers."""
+    meta, sec = EB.parse_pdf(BASE / "data" / "fin" / name)
+    items, pars, pi, rev = collections.Counter(), collections.Counter(), collections.Counter(), collections.Counter()
+    for r in sec["vydaje"]:
+        if r["polozka"] in INTERNAL_EXP:
+            continue
+        items[r["polozka"]] += r["skutecnost"]; pars[r["paragraf"]] += r["skutecnost"]
+        pi[(r["paragraf"], r["polozka"])] += r["skutecnost"]
+    for r in sec["prijmy"]:
+        if r["polozka"] in INTERNAL_REV:
+            continue
+        rev[r["polozka"]] += r["skutecnost"]
+    return meta.get("k"), dict(items), dict(pars), dict(pi), dict(rev)
+
+
+def _fin_budget(rec):
+    items, pars, pi, rev = collections.Counter(), collections.Counter(), collections.Counter(), collections.Counter()
+    for g in rec["vydaje"]:
+        for p in g["polozky"]:
+            if p["kod"] in INTERNAL_EXP:
+                continue
+            items[p["kod"]] += p["skutecnost"]; pars[g["paragraf"]] += p["skutecnost"]
+            pi[(g["paragraf"], p["kod"])] += p["skutecnost"]
+    for g in rec["prijmy"]:
+        for p in g["polozky"]:
+            if p["kod"] not in INTERNAL_REV:
+                rev[p["kod"]] += p["skutecnost"]
+    return rec["k"], dict(items), dict(pars), dict(pi), dict(rev)
+
+
+# cumulative 2026 snapshots: MONITOR (items + paragraphs) for Feb–Apr, statements for May–Sep
+SNAP = {}
+for m in (2, 3, 4):
+    d = M["druhove"][f"{CUR}-{m:02d}"]
+    SNAP[m] = {"v": d["vydaje"], "p": d["prijmy"], "par": d.get("paragrafy", {}), "pi": None}
+for m, src in ((5, "FIN_2-12_M_2026-05.pdf"), (6, "FIN_2-12_M_2026-06.pdf")):
+    k, v, par, pi, rev = _fin_pdf(src)
+    SNAP[m] = {"v": v, "par": par, "pi": pi, "p": rev}
+for m, rec in ((8, json.load(open(BASE / "data" / "snapshots" / "budget_2026-08.json"))["roky"][CUR]), (9, R)):
+    k, v, par, pi, rev = _fin_budget(rec)
+    SNAP[m] = {"v": v, "par": par, "pi": pi, "p": rev}
+
+MONTH_COLS = [("led–úno", 0, 2), ("bře", 2, 3), ("dub", 3, 4), ("kvě", 4, 5), ("čvn", 5, 6), ("čvc–srp", 6, 8), ("zář", 8, 9)]
+
+
+def _snap(m, sec):
+    return {} if m == 0 else SNAP[m][sec]
+
+
+MONTHLY = []  # month-by-month flows 2026 for the key rows
+for key, label, fn in PP_ROWS:
+    vals = []
+    for lab, a, b in MONTH_COLS:
+        vals.append(sum(v for k, v in _sub(_snap(b, "v"), _snap(a, "v")).items() if fn(k)))
+    MONTHLY.append({"key": key, "label": label, "vals": vals})
+
+# period comparison 2024 / 2025 / 2026, monthly averages
+PER = {}
+for y in (2024, 2025, 2026):
+    before = M["druhove"][f"{y}-{SPLIT:02d}"]
+    if y == int(CUR):
+        after_v = _sub(SNAP[MONTHS]["v"], before["vydaje"]); after_p = _sub(SNAP[MONTHS]["p"], before["prijmy"])
+        after_par = _sub(SNAP[MONTHS]["par"], before.get("paragrafy", {}))
+    else:
+        cum = M["druhove"][f"{y}-{MONTHS:02d}"]
+        after_v = _sub(cum["vydaje"], before["vydaje"]); after_p = _sub(cum["prijmy"], before["prijmy"])
+        after_par = _sub(cum.get("paragrafy", {}), before.get("paragrafy", {}))
+    PER[y] = {"B": {"v": before["vydaje"], "p": before["prijmy"], "par": before.get("paragrafy", {}), "m": SPLIT},
+              "A": {"v": after_v, "p": after_p, "par": after_par, "m": MONTHS - SPLIT}}
+
+# §3745 operating spend (paragraph total minus investments booked on §3745)
+_inv3745 = {2024: {"B": j_sum("2024", lambda r: r["par"] == "3745" and r["pol"][0] == "6", SPLIT)} if "2024" in J else {}, 2025: {"B": 0.0}}
+_inv3745[2024]["A"] = j_sum("2024", lambda r: r["par"] == "3745" and r["pol"][0] == "6", MONTHS) - _inv3745[2024]["B"]
+_inv3745[2025]["A"] = j_sum("2025", lambda r: r["par"] == "3745" and r["pol"][0] == "6", MONTHS)
+_inv3745[2026] = {"B": sum(v for (p, k), v in SNAP[5]["pi"].items() if p == "3745" and k[0] == "6"),   # all paid by Feb
+                  "A": sum(v for (p, k), v in SNAP[9]["pi"].items() if p == "3745" and k[0] == "6")
+                  - sum(v for (p, k), v in SNAP[5]["pi"].items() if p == "3745" and k[0] == "6")}
+
+
+def per_row(fn, sec="v"):
+    out = {}
+    for y, d in PER.items():
+        for ph in ("B", "A"):
+            out[(y, ph)] = sum(v for k, v in d[ph][sec].items() if fn(k))
+    return out
+
+
+PP_TABLE = []
+for key, label, fn in PP_ROWS:
+    PP_TABLE.append({"key": key, "label": label, "sum": per_row(fn)})
+_z = {}
+for y, d in PER.items():
+    for ph in ("B", "A"):
+        _z[(y, ph)] = d[ph]["par"].get("3745", 0.0) - _inv3745[y][ph]
+PP_TABLE.insert(1, {"key": "3745", "label": "z toho zeleň a vzhled obce §3745 (bez investic)", "sum": _z})
+_sz = {}
+for y, d in PER.items():
+    for ph in ("B", "A"):
+        _sz[(y, ph)] = d[ph]["par"].get("6171", 0.0) + d[ph]["par"].get("6112", 0.0)
+PP_TABLE.insert(2, {"key": "sprava", "label": "z toho správa a zastupitelstvo §6171 + §6112", "sum": _sz})
+PP_REV_TABLE = [{"key": k, "label": lab, "sum": per_row(fn, "p")} for k, lab, fn in PP_REV]
+
+# cash trajectory 2026 (opening balance + cumulative balance; statement balances where available)
+CASH = [("31. 12. 2025", BAL_OPEN_2026)]
+for m, lab in ((2, "28. 2."), (3, "31. 3."), (4, "30. 4."), (5, "31. 5."), (6, "30. 6."), (8, "31. 8."), (9, "30. 9.")):
+    CASH.append((lab, BAL_OPEN_2026 + sum(SNAP[m]["p"].values()) - sum(SNAP[m]["v"].values())))
+
+if __name__ == "__main__" and "--prepo" in sys.argv:
+    for r in PP_TABLE + PP_REV_TABLE:
+        s = r["sum"]
+        print(f"{r['label'][:44]:44}", " ".join(f"{s[(y, ph)] / PER[y][ph]['m']:>9,.0f}" for y in (2024, 2025, 2026) for ph in ("B", "A")))
+    for r in MONTHLY:
+        print(f"{r['label'][:44]:44}", " ".join(f"{v:>9,.0f}" for v in r["vals"]))
+    print(CASH)

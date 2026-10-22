@@ -78,16 +78,35 @@ if last_loaded:
     loads.append((f"{last_loaded // 100 + 2000}-{last_loaded % 100:02d}", last_loaded))
 # same period of the previous year as the latest FIN statement (year-on-year comparison)
 _k = json.load(open(Path(__file__).resolve().parent.parent / "web" / "budget.json"))["roky"]
-_cur = max(_k)
-_m = int(_k[_cur]["k"].split(".")[1])
+_cur = int(max(_k))
+_m = int(_k[str(_cur)]["k"].split(".")[1])
+_extra = set()
 if _m < 12:
-    _prev = int(_cur) - 1
-    loads.append((f"{_prev}-{_m:02d}", (_prev % 100) * 100 + _m))
+    for _y in (_cur - 1, _cur - 2):
+        _extra.add((_y, _m))
+# split month of the comparison "before / after the mayor took office" (21 Apr 2026 -> end of April)
+SPLIT_MONTH = 4
+for _y in (_cur, _cur - 1, _cur - 2):
+    _extra.add((_y, SPLIT_MONTH))
+# all loaded months of the current year (cash trajectory)
+for o in periods:
+    if o["year"] == _cur and o.get("finM") and o["loadID"] % 100 < 12:
+        _extra.add((_cur, o["loadID"] % 100))
+for _y, _mm in sorted(_extra):
+    key = f"{_y}-{_mm:02d}"
+    if key not in dict(loads):
+        loads.append((key, (_y % 100) * 100 + _mm))
 for key, lid in loads:
     rec = {}
     for cast, sec in (("p", "prijmy"), ("v", "vydaje")):
         d = get(f"/rozpocet/druhovy?obdobi={lid}&ic={ICO}&cast={cast}")
         rec[sec] = {k: round(v, 2) for k, v in sorted(leaves(d or {}, {}).items()) if abs(v) > 0.004}
+    if not rec["prijmy"] and not rec["vydaje"]:
+        print(f"  {key}: no data, skipped", file=sys.stderr)
+        continue
+    if len(key) > 4:   # monthly periods: functional breakdown too
+        d = get(f"/rozpocet/odvetvovy?obdobi={lid}&ic={ICO}&cast=v")
+        rec["paragrafy"] = {k: round(v["s"], 2) for k, v in sorted(paragraphs(d or {}, {}).items()) if abs(v["s"]) > 0.004}
     out["druhove"][key] = rec
     ent = get(f"/ucetni-jednotka/{ICO}?obdobi={lid}") or {}
     if ent.get("population"):

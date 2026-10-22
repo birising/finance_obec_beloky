@@ -207,93 +207,100 @@ def aggregate(rows, is_prijmy):
 # Population as of 1 January (2022–2025 Czech Statistical Office, 2026 municipality's own figure)
 OBYVATELE = {"2022": 190, "2023": 189, "2024": 184, "2025": 184, "2026": 181}
 
-out = {"obec": "Běloky", "ico": "00234125", "obyvatele": OBYVATELE, "roky": {}}
-for path, rok in FILES.items():
-    meta, sections = parse_pdf(path)
-    y = meta.get("rok", rok)
-    prijmy = aggregate(sections["prijmy"], True)
-    vydaje = aggregate(sections["vydaje"], False)
-    out["roky"][str(y)] = {
-        "k": meta.get("k",""),
-        "prijmy": prijmy,
-        "vydaje": vydaje,
-        "prijmy_celkem": round(sum(g["skutecnost"] for g in prijmy),2),
-        "vydaje_celkem": round(sum(g["skutecnost"] for g in vydaje),2),
-        "prijmy_rozpocet": round(sum(g["rozpocet"] for g in prijmy),2),
-        "vydaje_rozpocet": round(sum(g["rozpocet"] for g in vydaje),2),
-        "prijmy_schvaleny": round(sum(g["schvaleny"] for g in prijmy),2),
-        "vydaje_schvaleny": round(sum(g["schvaleny"] for g in vydaje),2),
-        "ucty": {"pocatek": meta.get("ucty_pocatek", 0), "konec": meta.get("ucty_konec", 0)},
+
+def main():
+
+    out = {"obec": "Běloky", "ico": "00234125", "obyvatele": OBYVATELE, "roky": {}}
+    for path, rok in FILES.items():
+        meta, sections = parse_pdf(path)
+        y = meta.get("rok", rok)
+        prijmy = aggregate(sections["prijmy"], True)
+        vydaje = aggregate(sections["vydaje"], False)
+        out["roky"][str(y)] = {
+            "k": meta.get("k",""),
+            "prijmy": prijmy,
+            "vydaje": vydaje,
+            "prijmy_celkem": round(sum(g["skutecnost"] for g in prijmy),2),
+            "vydaje_celkem": round(sum(g["skutecnost"] for g in vydaje),2),
+            "prijmy_rozpocet": round(sum(g["rozpocet"] for g in prijmy),2),
+            "vydaje_rozpocet": round(sum(g["rozpocet"] for g in vydaje),2),
+            "prijmy_schvaleny": round(sum(g["schvaleny"] for g in prijmy),2),
+            "vydaje_schvaleny": round(sum(g["schvaleny"] for g in vydaje),2),
+            "ucty": {"pocatek": meta.get("ucty_pocatek", 0), "konec": meta.get("ucty_konec", 0)},
+        }
+        if meta.get("ocr_totals"):
+            # OCR sanity check: the sum of the recognised items must equal the statement's total rows
+            r = out["roky"][str(y)]
+            for sec, tot in meta["ocr_totals"].items():
+                if sec not in ("prijmy", "vydaje"): continue
+                got = (r[sec + "_schvaleny"], r[sec + "_rozpocet"], r[sec + "_celkem"])
+                exp = tuple(num(t) for t in tot)
+                status = "OK" if all(abs(a - b) < 0.01 for a, b in zip(got, exp)) else "!!! MISMATCH"
+                print(f"{y} OCR check {sec}: item sum {got} vs. total row {exp} -> {status}", file=sys.stderr)
+        print(f"{y}: revenue {len(prijmy)} groups / actual {out['roky'][str(y)]['prijmy_celkem']:,.0f}  |  expenditure {len(vydaje)} groups / actual {out['roky'][str(y)]['vydaje_celkem']:,.0f}", file=sys.stderr)
+
+    # Apply budget amendments not yet reflected in the latest statement
+    for path in RO_FILES:
+        cislo, rok, zmeny, schvaleno = parse_ro(path)
+        y = out["roky"].get(rok or "")
+        if not y or not zmeny:
+            print(f"RO {path.name}: year {rok} not found or no changes — skipped", file=sys.stderr)
+            continue
+        if schvaleno and y.get("k") and parse_date(schvaleno) <= parse_date(y["k"]):
+            print(f"RO no. {cislo}/{rok} approved {schvaleno} <= statement as of {y['k']} — already included, skipped", file=sys.stderr)
+            y.setdefault("opatreni", []).append(f"RO č. {cislo}/{rok} (již ve výkazu)")
+            continue
+        for z in zmeny:
+            groups = y[z["sekce"]]
+            g = next((g for g in groups if g["paragraf"] == z["par"]), None)
+            if g is None:
+                g = {"paragraf": z["par"], "nazev": PARAGRAF_NAMES.get(z["par"], z["par"]),
+                     "schvaleny": 0, "rozpocet": 0, "skutecnost": 0, "polozky": []}
+                groups.append(g)
+            p = next((p for p in g["polozky"] if p["kod"] == z["pol"]), None)
+            if p is None:
+                p = {"kod": z["pol"], "text": "", "schvaleny": 0, "rozpocet": 0, "skutecnost": 0}
+                g["polozky"].append(p)
+            p["rozpocet"] = round(p["rozpocet"] + z["zmena"], 2)
+            g["rozpocet"] = round(g["rozpocet"] + z["zmena"], 2)
+            y[z["sekce"] + "_rozpocet"] = round(y[z["sekce"] + "_rozpocet"] + z["zmena"], 2)
+        y.setdefault("opatreni", []).append(f"RO č. {cislo}/{rok}")
+        print(f"RO no. {cislo}/{rok}: {len(zmeny)} changes, sum {sum(z['zmena'] for z in zmeny):,.0f} CZK", file=sys.stderr)
+
+    # Standard budget-classification names for codes that never appear in a year with row names
+    PARAGRAF_FALLBACK = {
+        "6409": "Ostatní činnosti jinde nezařazené",
     }
-    if meta.get("ocr_totals"):
-        # OCR sanity check: the sum of the recognised items must equal the statement's total rows
-        r = out["roky"][str(y)]
-        for sec, tot in meta["ocr_totals"].items():
-            if sec not in ("prijmy", "vydaje"): continue
-            got = (r[sec + "_schvaleny"], r[sec + "_rozpocet"], r[sec + "_celkem"])
-            exp = tuple(num(t) for t in tot)
-            status = "OK" if all(abs(a - b) < 0.01 for a, b in zip(got, exp)) else "!!! MISMATCH"
-            print(f"{y} OCR check {sec}: item sum {got} vs. total row {exp} -> {status}", file=sys.stderr)
-    print(f"{y}: revenue {len(prijmy)} groups / actual {out['roky'][str(y)]['prijmy_celkem']:,.0f}  |  expenditure {len(vydaje)} groups / actual {out['roky'][str(y)]['vydaje_celkem']:,.0f}", file=sys.stderr)
+    POLOZKA_FALLBACK = {
+        "2322": "Přijaté pojistné náhrady",
+        "4213": "Investiční přijaté transfery ze státních fondů",
+        "4216": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+        "5221": "Neinvestiční transfery fundacím, ústavům a obecně prospěšným společnostem",
+        "5134": "Prádlo, oděv a obuv",
+        "5492": "Dary obyvatelstvu",
+    }
 
-# Apply budget amendments not yet reflected in the latest statement
-for path in RO_FILES:
-    cislo, rok, zmeny, schvaleno = parse_ro(path)
-    y = out["roky"].get(rok or "")
-    if not y or not zmeny:
-        print(f"RO {path.name}: year {rok} not found or no changes — skipped", file=sys.stderr)
-        continue
-    if schvaleno and y.get("k") and parse_date(schvaleno) <= parse_date(y["k"]):
-        print(f"RO no. {cislo}/{rok} approved {schvaleno} <= statement as of {y['k']} — already included, skipped", file=sys.stderr)
-        y.setdefault("opatreni", []).append(f"RO č. {cislo}/{rok} (již ve výkazu)")
-        continue
-    for z in zmeny:
-        groups = y[z["sekce"]]
-        g = next((g for g in groups if g["paragraf"] == z["par"]), None)
-        if g is None:
-            g = {"paragraf": z["par"], "nazev": PARAGRAF_NAMES.get(z["par"], z["par"]),
-                 "schvaleny": 0, "rozpocet": 0, "skutecnost": 0, "polozky": []}
-            groups.append(g)
-        p = next((p for p in g["polozky"] if p["kod"] == z["pol"]), None)
-        if p is None:
-            p = {"kod": z["pol"], "text": "", "schvaleny": 0, "rozpocet": 0, "skutecnost": 0}
-            g["polozky"].append(p)
-        p["rozpocet"] = round(p["rozpocet"] + z["zmena"], 2)
-        g["rozpocet"] = round(g["rozpocet"] + z["zmena"], 2)
-        y[z["sekce"] + "_rozpocet"] = round(y[z["sekce"] + "_rozpocet"] + z["zmena"], 2)
-    y.setdefault("opatreni", []).append(f"RO č. {cislo}/{rok}")
-    print(f"RO no. {cislo}/{rok}: {len(zmeny)} changes, sum {sum(z['zmena'] for z in zmeny):,.0f} CZK", file=sys.stderr)
+    # The compact layout has no row names -> fill them in from years that have them
+    pol_names = dict(POLOZKA_FALLBACK)
+    for y in out["roky"].values():
+        for sec in ("prijmy", "vydaje"):
+            for g in y[sec]:
+                for p in g["polozky"]:
+                    if p["text"]: pol_names.setdefault(p["kod"], p["text"])
+    for y in out["roky"].values():
+        for sec in ("prijmy", "vydaje"):
+            for g in y[sec]:
+                if g["nazev"] == g["paragraf"]:
+                    g["nazev"] = PARAGRAF_NAMES.get(g["paragraf"]) or PARAGRAF_FALLBACK.get(g["paragraf"], g["nazev"])
+                for p in g["polozky"]:
+                    if not p["text"]:
+                        p["text"] = pol_names.get(p["kod"], "Položka " + p["kod"])
 
-# Standard budget-classification names for codes that never appear in a year with row names
-PARAGRAF_FALLBACK = {
-    "6409": "Ostatní činnosti jinde nezařazené",
-}
-POLOZKA_FALLBACK = {
-    "2322": "Přijaté pojistné náhrady",
-    "4213": "Investiční přijaté transfery ze státních fondů",
-    "4216": "Ostatní investiční přijaté transfery ze státního rozpočtu",
-    "5221": "Neinvestiční transfery fundacím, ústavům a obecně prospěšným společnostem",
-    "5134": "Prádlo, oděv a obuv",
-    "5492": "Dary obyvatelstvu",
-}
+    out["paragraf_nazvy"] = PARAGRAF_NAMES
+    with open(OUT, "w", encoding="utf-8") as f:
+        json.dump(out, f, ensure_ascii=False, indent=1)
+    print(f"WROTE {OUT}", file=sys.stderr)
 
-# The compact layout has no row names -> fill them in from years that have them
-pol_names = dict(POLOZKA_FALLBACK)
-for y in out["roky"].values():
-    for sec in ("prijmy", "vydaje"):
-        for g in y[sec]:
-            for p in g["polozky"]:
-                if p["text"]: pol_names.setdefault(p["kod"], p["text"])
-for y in out["roky"].values():
-    for sec in ("prijmy", "vydaje"):
-        for g in y[sec]:
-            if g["nazev"] == g["paragraf"]:
-                g["nazev"] = PARAGRAF_NAMES.get(g["paragraf"]) or PARAGRAF_FALLBACK.get(g["paragraf"], g["nazev"])
-            for p in g["polozky"]:
-                if not p["text"]:
-                    p["text"] = pol_names.get(p["kod"], "Položka " + p["kod"])
 
-out["paragraf_nazvy"] = PARAGRAF_NAMES
-with open(OUT, "w", encoding="utf-8") as f:
-    json.dump(out, f, ensure_ascii=False, indent=1)
-print(f"WROTE {OUT}", file=sys.stderr)
+if __name__ == "__main__":
+    main()
