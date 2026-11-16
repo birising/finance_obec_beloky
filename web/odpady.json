@@ -1,7 +1,7 @@
 {
  "obec": "Běloky",
  "ico": "00234125",
- "zdroj": "MONITOR státní pokladny (§37xx) + EKO-KOM výroční dopis 2025 + faktury FCC Regios",
+ "zdroj": "MONITOR státní pokladny (§37xx) + EKO-KOM výroční dopis 2025 a rozpis fakturace 3Q 2026 + faktury FCC Regios",
  "roky": [
   {
    "rok": 2019,
@@ -128,6 +128,61 @@
     "kc": 22071.0
    }
   ]
+ },
+ "ekokom_ctvrtleti": {
+  "q": "3Q",
+  "rok": 2026,
+  "obdobi": "1. 7. – 30. 9. 2026",
+  "t": 4.386,
+  "kc": 23299.5,
+  "komodity": [
+   {
+    "nazev": "Papír",
+    "t": 1.404,
+    "kc": 7852.08,
+    "nadoby": 2,
+    "vyvozy": 52
+   },
+   {
+    "nazev": "Plast",
+    "t": 1.209,
+    "kc": 9048.28,
+    "nadoby": 4,
+    "vyvozy": 60
+   },
+   {
+    "nazev": "Sklo směsné",
+    "t": 1.572,
+    "kc": 2263.68,
+    "nadoby": 2,
+    "vyvozy": 12
+   },
+   {
+    "nazev": "Kov",
+    "t": 0.116,
+    "kc": 1220.32,
+    "nadoby": 1,
+    "vyvozy": 7
+   },
+   {
+    "nazev": "Nápojový karton",
+    "t": 0.085,
+    "kc": 1672.9,
+    "nadoby": 1,
+    "vyvozy": 7
+   }
+  ],
+  "ostatni": [
+   {
+    "nazev": "Základní odměna za sběrná místa",
+    "kc": 1196.0
+   },
+   {
+    "nazev": "Úklid jednorázových plastových obalů",
+    "kc": 46.0
+   }
+  ],
+  "zdroj": "EKO-KOM, rozpis fakturace za 3. čtvrtletí 2026 (16. 11. 2026)"
  },
  "svoz_struktura": {
   "zaklad_celkem": 270201,

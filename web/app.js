@@ -831,6 +831,22 @@ function renderOdpady() {
     <tbody>${qrows}<tr class="tot"><td>Rok 2025</td><td class="num">${tun(E.tuny)}</td><td class="num">${kc(E.castka)}</td></tr></tbody></table>
     <p class="hint" style="margin-top:8px">Pozn.: odměna z výročního přehledu (${kc(E.castka)}) se od částky v rozpočtu liší kvůli časovému posunu fakturace (poslední čtvrtletí obec inkasuje až v dalším roce).</p>`;
 
+  // --- EKO-KOM latest quarter (invoice breakdown by commodity) ---
+  const Q = ODP.ekokom_ctvrtleti;
+  if (Q) {
+    const prev = E.kvartaly.find(k => k.q === Q.q); // same quarter of 2025
+    const dif = (a, b) => { const p = (a / b - 1) * 100; return `${p >= 0 ? "+" : "−"}${Math.abs(p).toLocaleString("cs-CZ", { maximumFractionDigits: 1 })} %`; };
+    const krows = Q.komodity.map(k => `<tr><td>${k.nazev}</td><td class="num">${tun(k.t)}</td><td class="num">${kc(k.kc)}</td><td class="num muted">${k.vyvozy}×</td><td class="num muted">${fmt.format(Math.round(k.t * 1000 / k.vyvozy))} kg</td></tr>`).join("");
+    const orows = (Q.ostatni || []).map(o => `<tr><td>${o.nazev}</td><td class="num">—</td><td class="num">${kc(o.kc)}</td><td class="num">—</td><td class="num">—</td></tr>`).join("");
+    const cmp = prev ? `<p class="hint" style="margin-top:8px">Proti stejnému čtvrtletí roku 2025: množství ${tun(prev.t)} → ${tun(Q.t)} (${dif(Q.t, prev.t)}), odměna ${kc(prev.kc)} → ${kc(Q.kc)} (${dif(Q.kc, prev.kc)}).</p>` : "";
+    $("#odpEkokom").insertAdjacentHTML("beforeend", `
+    <h3 style="margin:18px 0 8px">${Q.q.replace("Q", ". čtvrtletí")} ${Q.rok} podle komodit</h3>
+    <div style="overflow-x:auto"><table><thead><tr><th>Komodita</th><th class="num">Množství</th><th class="num">Odměna</th><th class="num">Vývozy nádob</th><th class="num">Na 1 vývoz</th></tr></thead>
+    <tbody>${krows}${orows}<tr class="tot"><td>Celkem</td><td class="num">${tun(Q.t)}</td><td class="num">${kc(Q.kc)}</td><td class="num"></td><td class="num"></td></tr></tbody></table></div>
+    ${cmp}
+    <p class="hint" style="margin-top:4px">Zdroj: ${Q.zdroj}. Vývozy = počet vysypání nádob za čtvrtletí; „na 1 vývoz“ je průměrná hmotnost obsahu jedné nádoby.</p>`);
+  }
+
   // --- collection structure (donut) ---
   const S = ODP.svoz_struktura, items = S.polozky.map(p => ({ ...p, color: ODP_KOM[p.kod] || "#64748b" }));
   const stot = items.reduce((s, i) => s + i.kc, 0);
